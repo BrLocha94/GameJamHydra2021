@@ -337,7 +337,6 @@ public abstract class TransformTweenParameterBase : ResolvableTweenParameterBase
         end = m_End.Resolve(resolver);
         return resolver;
     }
-
     public override Vector3 GetValue(float t)
     {
         base.GetValue(t);
@@ -351,9 +350,9 @@ public abstract class TransformTweenParameterBase : ResolvableTweenParameterBase
 
             if (m_IndividualChannels)
             {
-                float x = Mathf.Lerp(s.x, e.x, m_TweenIndividualChannels[0].GetValue(t));
-                float y = Mathf.Lerp(s.y, e.y,  m_TweenIndividualChannels[1].GetValue(t));
-                float z = Mathf.Lerp(s.z, e.z, m_TweenIndividualChannels[2].GetValue(t));
+                float x = Mathf.LerpUnclamped(s.x, e.x, m_TweenIndividualChannels[0].GetValue(t));
+                float y = Mathf.LerpUnclamped(s.y, e.y,  m_TweenIndividualChannels[1].GetValue(t));
+                float z = Mathf.LerpUnclamped(s.z, e.z, m_TweenIndividualChannels[2].GetValue(t));
                 return new Vector3(x, y, z);
             }
 
