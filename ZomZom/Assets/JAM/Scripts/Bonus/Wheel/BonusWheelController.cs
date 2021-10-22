@@ -19,7 +19,7 @@ public class BonusWheelController : MonoBehaviour
 
         for (int i = 0; i < wheels.Length; i++)
         {
-            wheels[i].Begin();
+            wheels[i].Begin(Random.Range(0,5));
         }
     }
 

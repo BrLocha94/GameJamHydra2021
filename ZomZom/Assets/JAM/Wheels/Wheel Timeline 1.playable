@@ -813,7 +813,7 @@ MonoBehaviour:
       m_End: {x: 0, y: 0, z: 0, w: 0}
       m_StarEndData: {fileID: 0}
       m_FromAsset: 0
-      m_PropertyName: _Offset
+      m_PropertyName: _Rotation
 --- !u!114 &-6399231725017022643
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1599,7 +1599,7 @@ MonoBehaviour:
       m_End: {x: 0, y: -0.03, z: 0, w: 0}
       m_StarEndData: {fileID: 0}
       m_FromAsset: 0
-      m_PropertyName: _Offset
+      m_PropertyName: _Rotation
 --- !u!114 &5333934634216119192
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2592,4 +2592,4 @@ MonoBehaviour:
       m_End: {x: 0, y: 0, z: 0, w: 0}
       m_StarEndData: {fileID: 0}
       m_FromAsset: 0
-      m_PropertyName: _Offset
+      m_PropertyName: _Rotation

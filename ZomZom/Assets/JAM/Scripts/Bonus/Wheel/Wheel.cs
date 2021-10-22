@@ -7,9 +7,11 @@ using UnityEngine.Playables;
 [RequireComponent(typeof(PlayableDirector))]
 public class Wheel : MonoBehaviour
 {
-    [SerializeField]private GameObject mask;
+    [SerializeField]private Material material;
+    [SerializeField]private float slotOffsetSize = -0.414f;
     private PlayableDirector m_PlayableDirector;
     private bool loop = true;
+    private int offsetParameter = Shader.PropertyToID("_SlotOffset");
 
     private void Awake()
     {
@@ -22,13 +24,12 @@ public class Wheel : MonoBehaviour
         if (m_PlayableDirector == null) m_PlayableDirector = GetComponent<PlayableDirector>();
         m_PlayableDirector.time = seconds;
     }
-
-    public void Begin()
+    public void Begin(int targetSymbolIndex)
     {
-        mask.SetActive(false);
         loop = true;
         m_PlayableDirector.time = 0;
         m_PlayableDirector.Play();
+        material.SetVector(offsetParameter, new Vector2(0, targetSymbolIndex));
     }
     public void Stop()
     {
