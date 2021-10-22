@@ -216,7 +216,7 @@ Material:
     - _NormalScale: 1
     - _OcclusionStrength: 1
     - _OpaqueCullMode: 2
-    - _Open: 1
+    - _Open: 0.039
     - _Open2: 0.35
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15
