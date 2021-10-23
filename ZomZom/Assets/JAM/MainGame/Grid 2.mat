@@ -142,7 +142,7 @@ Material:
     - _AlphaSrcBlend: 1
     - _AlphaToMask: 0
     - _AlphaToMaskInspectorValue: 0
-    - _Amount: 0
+    - _Amount: 9.985784
     - _Anisotropy: 0
     - _Attenuation: 1
     - _BlendMode: 0
