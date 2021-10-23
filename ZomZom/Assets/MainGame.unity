@@ -2949,7 +2949,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 971288848}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1127620029}
+        m_TargetAssemblyTypeName: Denomination, Jam
+        m_MethodName: UpdateDenomination
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &971288848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4005,7 +4017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 401d4e61f6e51ac4a836e12267fbdad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outputText: {fileID: 0}
+  outputText: {fileID: 1519507275}
   allowedDenominations: 19000000320000006400000096000000c8000000
 --- !u!114 &1127620030
 MonoBehaviour:
@@ -7496,7 +7508,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2088860604}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1127620029}
+        m_TargetAssemblyTypeName: Denomination, Jam
+        m_MethodName: UpdateDenomination
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2088860604
 MonoBehaviour:
   m_ObjectHideFlags: 0
