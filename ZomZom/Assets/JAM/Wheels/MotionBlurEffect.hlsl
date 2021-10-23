@@ -12,7 +12,7 @@ void MotionBlur_float(UnityTexture2D Tex ,UnitySamplerState SS, float Amount,flo
         OUT += SAMPLE_TEXTURE2D(Tex, SS, UV+float2(0,i*0.001f*Amount));
     }
     
-    OUT/=samples * 2;
+    OUT/=samples;
 }
 
 #endif
