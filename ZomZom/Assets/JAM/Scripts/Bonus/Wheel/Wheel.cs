@@ -4,23 +4,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 
-[RequireComponent(typeof(PlayableDirector))]
 public class Wheel : MonoBehaviour
 {
-    [SerializeField]private Material material;
-    [SerializeField]private float slotOffsetSize = -0.414f;
+   
     private PlayableDirector m_PlayableDirector;
     private bool loop = true;
-    private int offsetParameter = Shader.PropertyToID("_SlotOffset");
+   
 
     private void Awake()
     {
         m_PlayableDirector = GetComponent<PlayableDirector>();
     }
 
-    public void SetTime(float seconds)
+   /* public void SetTime(float seconds)
     {
-        if(!loop)return;
+        if (!loop) return;
 
         if (m_PlayableDirector == null)
             m_PlayableDirector = GetComponent<PlayableDirector>();
@@ -39,6 +37,8 @@ public class Wheel : MonoBehaviour
     public void Stop()
     {
         loop = false;
-    }
+    }*/
+
+  
 }
-    
+

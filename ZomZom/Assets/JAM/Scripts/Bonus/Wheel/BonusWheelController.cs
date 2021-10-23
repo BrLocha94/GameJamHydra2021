@@ -24,7 +24,7 @@ public class BonusWheelController : MonoBehaviour
 
         for (int i = 0; i < wheels.Length; i++)
         {
-            wheels[i].Begin(Random.Range(0,5));
+           // wheels[i].Begin(Random.Range(0,5));
         }
     }
 
@@ -32,7 +32,7 @@ public class BonusWheelController : MonoBehaviour
     {
         if(currentWheel>wheels.Length-1)return;
 
-        wheels[currentWheel].Stop();
+       // wheels[currentWheel].Stop();
         currentWheel++;
     }
 }
