@@ -17,13 +17,17 @@ public class Wheel : MonoBehaviour
     {
         m_PlayableDirector = GetComponent<PlayableDirector>();
     }
+
     public void SetTime(float seconds)
     {
         if(!loop)return;
 
-        if (m_PlayableDirector == null) m_PlayableDirector = GetComponent<PlayableDirector>();
+        if (m_PlayableDirector == null)
+            m_PlayableDirector = GetComponent<PlayableDirector>();
+
         m_PlayableDirector.time = seconds;
     }
+
     public void Begin(int targetSymbolIndex)
     {
         loop = true;
@@ -31,6 +35,7 @@ public class Wheel : MonoBehaviour
         m_PlayableDirector.Play();
         material.SetVector(offsetParameter, new Vector2(0, targetSymbolIndex));
     }
+
     public void Stop()
     {
         loop = false;

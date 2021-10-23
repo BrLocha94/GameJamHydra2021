@@ -13,7 +13,12 @@ public class BonusWheelController : MonoBehaviour
         Begin();
     }
 
-   public void Begin()
+    public void OnPlayPressed()
+    {
+
+    }
+
+    public void Begin()
     {
         currentWheel = 0;
 
@@ -22,7 +27,6 @@ public class BonusWheelController : MonoBehaviour
             wheels[i].Begin(Random.Range(0,5));
         }
     }
-
 
     public void OnPressToStop()
     {
