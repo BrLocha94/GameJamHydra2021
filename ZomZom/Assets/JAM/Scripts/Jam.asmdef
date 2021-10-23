@@ -1,3 +1,16 @@
 {
-	"name": "Jam"
+    "name": "Jam",
+    "rootNamespace": "",
+    "references": [
+        "GUID:913c002550c5d3c4487e088aae663576"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

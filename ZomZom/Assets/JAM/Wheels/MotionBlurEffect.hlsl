@@ -5,7 +5,7 @@ void MotionBlur_float(UnityTexture2D Tex ,UnitySamplerState SS, float Amount,flo
 {
     OUT = float4(0,0,0,0);
 
-    float samples = 10;
+    float samples = 18;
 
     for(float i = 0; i < samples; i++)
     {

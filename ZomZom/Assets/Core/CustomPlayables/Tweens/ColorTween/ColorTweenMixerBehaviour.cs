@@ -1,19 +1,29 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 
-public class ColorTweenMixerBehaviour : TweenMixerBehaviour<ColorTweenBehaviour, ColorControl, TweenMixerData<Color>>
+public class ColorTweenMixerBehaviour : TweenMixerBehaviour<ColorTweenBehaviour, TweenableBase<Color>, TweenMixerData<Color>>
 {
-    protected Color m_DefaultValue;
+   protected List<Color> m_DefaultValue = new List<Color>();
 
     private TweenMixerData<Color> m_BlendedValue = new TweenMixerData<Color>();
+
+    private int tweenableIndex=> (masterTrack as ColorTweenTrack).TweenableIndex;
+
     protected override void OnFirstFrame()
     {
         base.OnFirstFrame();
 
-        if(track == masterTrack)
+        if (track == masterTrack)
         {
-            m_DefaultValue = trackBinding.value;
+            Dictionary<int, string> tweenables = trackBinding.TweenableMembers;
+
+            for (int i = 0; i < tweenables.Count; i++)
+            {
+                m_DefaultValue.Add(trackBinding.GetTweenableValue(i));
+            }
+
         }
     }
     public override void OnPlayableDestroy(Playable playable)
@@ -22,7 +32,7 @@ public class ColorTweenMixerBehaviour : TweenMixerBehaviour<ColorTweenBehaviour,
 
         if (trackBinding != null && postplaybackResetToDefault)
         {
-            trackBinding.value = m_DefaultValue;
+            trackBinding.SetTweenableValue(tweenableIndex, m_DefaultValue[tweenableIndex]);
         }
     }
     protected override ref TweenMixerData<Color> ProcessTweenFrame(Playable playable, FrameData info, object playerData)
@@ -49,7 +59,7 @@ public class ColorTweenMixerBehaviour : TweenMixerBehaviour<ColorTweenBehaviour,
             m_BlendedValue.data += input.GetStartEndValue(tweenProgress) * inputWeight;
         }
 
-        m_BlendedValue.data += m_DefaultValue * (1f - valueTotalWeight);
+        m_BlendedValue.data += m_DefaultValue[tweenableIndex] * (1f - valueTotalWeight);
 
         return ref m_BlendedValue;
     }
@@ -80,6 +90,6 @@ public class ColorTweenMixerBehaviour : TweenMixerBehaviour<ColorTweenBehaviour,
     }
     protected override void ApplyProcessedData(ref TweenMixerData<Color> processedData)
     {
-        trackBinding.value = processedData.data;
+        trackBinding.SetTweenableValue(tweenableIndex, processedData.data);
     }
 }
