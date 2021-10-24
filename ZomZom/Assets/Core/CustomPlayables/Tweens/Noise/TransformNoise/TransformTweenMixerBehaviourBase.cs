@@ -11,9 +11,12 @@ public abstract class TransformTweenMixerBehaviourBase<BEHAVIOUR> : PRSMixerBeha
     }
     protected override void ResetToDefaultValues()
     {
-        trackBinding.localPosition = m_DefaultPosition;
-        trackBinding.localEulerAngles = m_DefaultRotation;
-        trackBinding.localScale = m_DefaultScale;
+        if (trackBinding != null)
+        {
+            trackBinding.localPosition = m_DefaultPosition;
+            trackBinding.localEulerAngles = m_DefaultRotation;
+            trackBinding.localScale = m_DefaultScale;
+        }
     }
     protected override void SetPosition(Vector3 pos)
     {

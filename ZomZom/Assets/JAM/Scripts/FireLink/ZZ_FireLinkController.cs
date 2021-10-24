@@ -35,18 +35,6 @@ public class ZZ_FireLinkController : MonoBehaviour
 
     private void Awake()
     {
-
-        gridSpriteRendererGroup.groupAlpha = 0;
-
-        for (int i = 0; i < fireLinkColumns.Length; i++)
-        {
-            for (int j = 0; j < fireLinkColumns[i].Slots.Count; j++)
-            {
-                ZZ_Grid_Slot slot = fireLinkColumns[i].Slots[j];
-                slot.symbol.SetOpacity(0);
-            }
-        }
-
         plays.Add(new FireLinkPlay()
         {
             winSymbolsCoords = new (int columnIndex, int rowIndex)[]
@@ -98,6 +86,17 @@ public class ZZ_FireLinkController : MonoBehaviour
     private void Start()
     {
        // StartCoroutine(StartFireLink());
+
+         gridSpriteRendererGroup.groupAlpha = 0;
+
+        for (int i = 0; i < fireLinkColumns.Length; i++)
+        {
+            for (int j = 0; j < fireLinkColumns[i].Slots.Count; j++)
+            {
+                ZZ_Grid_Slot slot = fireLinkColumns[i].Slots[j];
+                slot.symbol.SetOpacity(0);
+            }
+        }
     }
 
     public IEnumerator StartFireLink()
