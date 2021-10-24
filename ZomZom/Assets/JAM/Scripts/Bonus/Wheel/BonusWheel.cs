@@ -25,12 +25,11 @@ public class BonusWheel : MonoBehaviour
         m_PlayableDirector.time = seconds;
     }
 
-    public void Begin(int targetSymbolIndex)
+    public void Begin()
     {
         loop = true;
         m_PlayableDirector.time = 0;
         m_PlayableDirector.Play();
-        //material.SetVector(offsetParameter, new Vector2(0, targetSymbolIndex));
     }
 
     public void Stop()

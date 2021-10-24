@@ -6,6 +6,7 @@ using UnityEngine.Playables;
 public class BonusWheelController : MonoBehaviour
 {
     [SerializeField] BonusWheel[] bonusWheels;
+    [SerializeField] ZZ_Slot_Symbol[] targetSlots;
 
     private int currentWheel = 0;
     private bool stopping = false;
@@ -17,7 +18,12 @@ public class BonusWheelController : MonoBehaviour
 
         for (int i = 0; i < bonusWheels.Length; i++)
         {
-           bonusWheels[i].Begin(0);
+           bonusWheels[i].Begin();
+        }
+
+        for (int i = 0; i < targetSlots.Length; i++)
+        {
+            //targetSlots[i].SetSprite()
         }
     }
 
