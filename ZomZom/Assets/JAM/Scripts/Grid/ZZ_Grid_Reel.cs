@@ -6,6 +6,7 @@ public class ZZ_Grid_Reel : TweenableBase<float>
 {
     [SerializeField] private Material material;
     [SerializeField] private List<ZZ_Grid_Slot> slots = new List<ZZ_Grid_Slot>();
+    [SerializeField] private SO_FloatStartEndData fromToReelAnimation;
     private int offsetParameter = Shader.PropertyToID("_SlotOffset");
     public float Offset
     {
@@ -31,16 +32,15 @@ public class ZZ_Grid_Reel : TweenableBase<float>
         }
         return 0;
     }
+    public void SetFromToAnimation(Vector2 fromTo)
+    {
+        fromToReelAnimation.start = fromTo.x;
+        fromToReelAnimation.end = fromTo.y;
+    }
     public void SetSymbol(SymbolData symbolData, int slotIndex)
     {
         slots[slotIndex].SetSymbol(symbolData);
     }
-}
-
-[CreateAssetMenu(fileName = "SymbolsDataSet", menuName = "Data/SymbolsDataSet", order = 0)]
-public class SymbolsDataAsset : ScriptableObject
-{ 
-    [field: SerializeField]public List<SymbolData> symbolsDataList {get; private set;}
 }
 
 [System.Serializable]
@@ -50,13 +50,13 @@ public struct SymbolData
     [field:SerializeField]public Sprite Sprite {get; private set;}
 }
 
-public enum ESymbol
+public enum ESymbol : int
 {
-    P1,
-    P2,
-    P3,
-    P4,
-    P5,
-    P6,
-    Bonus,
+    Bonus = 0,
+    P1 = 1,
+    P2 = 2,
+    P3 = 3,
+    P4 = 4,
+    P5 = 5,
+    P6 = 6
 }

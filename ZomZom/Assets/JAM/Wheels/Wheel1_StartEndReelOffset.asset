@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Wheel1_StartEndReelOffset
   m_EditorClassIdentifier: 
   assetDescription: 
-  m_Start: 1
-  m_End: 4
+  m_Start: 87
+  m_End: 90

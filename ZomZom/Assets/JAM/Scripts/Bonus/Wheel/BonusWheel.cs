@@ -4,19 +4,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 
-public class Wheel : MonoBehaviour
+public class BonusWheel : MonoBehaviour
 {
-   
     private PlayableDirector m_PlayableDirector;
+
     private bool loop = true;
    
-
     private void Awake()
     {
         m_PlayableDirector = GetComponent<PlayableDirector>();
     }
 
-   /* public void SetTime(float seconds)
+    public void SetTime(float seconds)
     {
         if (!loop) return;
 
@@ -31,14 +30,12 @@ public class Wheel : MonoBehaviour
         loop = true;
         m_PlayableDirector.time = 0;
         m_PlayableDirector.Play();
-        material.SetVector(offsetParameter, new Vector2(0, targetSymbolIndex));
+        //material.SetVector(offsetParameter, new Vector2(0, targetSymbolIndex));
     }
 
     public void Stop()
     {
         loop = false;
-    }*/
-
-  
+    }
 }
 

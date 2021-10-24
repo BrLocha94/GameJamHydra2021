@@ -5,34 +5,32 @@ using UnityEngine.Playables;
 
 public class BonusWheelController : MonoBehaviour
 {
-    [SerializeField] Wheel[] wheels;
+    [SerializeField] BonusWheel[] bonusWheels;
+
     private int currentWheel = 0;
-
-    void Start()
-    {
-        Begin();
-    }
-
-    public void OnPlayPressed()
-    {
-
-    }
+    private bool stopping = false;
 
     public void Begin()
     {
         currentWheel = 0;
+        stopping = false;
 
-        for (int i = 0; i < wheels.Length; i++)
+        for (int i = 0; i < bonusWheels.Length; i++)
         {
-           // wheels[i].Begin(Random.Range(0,5));
+           bonusWheels[i].Begin(0);
         }
+    }
+
+    public void OnWheelStopped()
+    {
+        stopping = false;
     }
 
     public void OnPressToStop()
     {
-        if(currentWheel>wheels.Length-1)return;
-
-       // wheels[currentWheel].Stop();
+        if(stopping || currentWheel> bonusWheels.Length-1)return;
+        bonusWheels[currentWheel].Stop();
         currentWheel++;
+        stopping = true;
     }
 }

@@ -8,20 +8,16 @@ public class FloatTweenMixerBehaviour : TweenMixerBehaviour<FloatTweenBehaviour,
     protected List<float> m_DefaultValue = new List<float>();
 
     private TweenMixerData<float> m_BlendedValue = new TweenMixerData<float>();
-    private int tweenableIndex=> (masterTrack as FloatTweenTrack).TweenableIndex;
+    private int tweenableIndex => (masterTrack as FloatTweenTrack).TweenableIndex;
     protected override void OnFirstFrame()
     {
         base.OnFirstFrame();
 
-        if (track == masterTrack)
+        Dictionary<int, string> tweenables = trackBinding.TweenableMembers;
+
+        for (int i = 0; i < tweenables.Count; i++)
         {
-            Dictionary<int, string> tweenables = trackBinding.TweenableMembers;
-
-            for (int i = 0; i < tweenables.Count; i++)
-            {
-                m_DefaultValue.Add(trackBinding.GetTweenableValue(i));
-            }
-
+            m_DefaultValue.Add(trackBinding.GetTweenableValue(i));
         }
     }
     public override void OnPlayableDestroy(Playable playable)
