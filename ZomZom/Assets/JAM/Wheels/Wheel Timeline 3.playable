@@ -1,133 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7551490303413112527
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6c1d9d66045eb74f9f9a564e5b6bc3d, type: 3}
-  m_Name: Material Asset Tween Track
-  m_EditorClassIdentifier: 
-  m_Version: 3
-  m_AnimClip: {fileID: 0}
-  m_Locked: 0
-  m_Muted: 0
-  m_CustomPlayableFullTypename: 
-  m_Curves: {fileID: 0}
-  m_Parent: {fileID: 11400000}
-  m_Children: []
-  m_Clips:
-  - m_Version: 1
-    m_Start: 1
-    m_ClipIn: 0
-    m_Asset: {fileID: 2814235313912490174}
-    m_Duration: 1
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: -7551490303413112527}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: MaterialTweenClip
-  - m_Version: 1
-    m_Start: 0
-    m_ClipIn: 0
-    m_Asset: {fileID: -4894653036215177778}
-    m_Duration: 1
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: -7551490303413112527}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: MaterialTweenClip
-  - m_Version: 1
-    m_Start: 2
-    m_ClipIn: 0
-    m_Asset: {fileID: -6310499526104577520}
-    m_Duration: 2.000000000000001
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: -7551490303413112527}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: Infinity
-    m_PreExtrapolationTime: 0
-    m_DisplayName: MaterialTweenClip
-  m_Markers:
-    m_Objects: []
-  postplaybackResetToDefault: 1
-  mixerDataMode: 0
-  subTracks: []
-  masterTrack: {fileID: -7551490303413112527}
-  clampColor: 0
---- !u!114 &-7312929622186933181
+--- !u!114 &-9145178931433124522
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8441c7dd3552af343aa562c6fdbd1412, type: 3}
-  m_Name: Float Tween Track (1)
+  m_Name: Float Tween Track
   m_EditorClassIdentifier: 
   m_Version: 3
   m_AnimClip: {fileID: 0}
@@ -147,15 +20,15 @@ MonoBehaviour:
   m_Curves: {fileID: 0}
   m_Parent: {fileID: 11400000}
   m_Children:
-  - {fileID: -948897421353596121}
+  - {fileID: -2356173347869522725}
   m_Clips:
   - m_Version: 1
     m_Start: 0
     m_ClipIn: 0
-    m_Asset: {fileID: 3357908661230854336}
+    m_Asset: {fileID: 2921293946700160264}
     m_Duration: 1
     m_TimeScale: 1
-    m_ParentTrack: {fileID: -7312929622186933181}
+    m_ParentTrack: {fileID: -9145178931433124522}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: -1
@@ -185,10 +58,10 @@ MonoBehaviour:
   - m_Version: 1
     m_Start: 1
     m_ClipIn: 0
-    m_Asset: {fileID: -4644438671140376833}
-    m_Duration: 1
+    m_Asset: {fileID: 7493515286143665451}
+    m_Duration: 0.5
     m_TimeScale: 1
-    m_ParentTrack: {fileID: -7312929622186933181}
+    m_ParentTrack: {fileID: -9145178931433124522}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: -1
@@ -216,12 +89,12 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: FloatTweenClip
   - m_Version: 1
-    m_Start: 2
+    m_Start: 1.5
     m_ClipIn: 0
-    m_Asset: {fileID: -3439883416870033832}
+    m_Asset: {fileID: 8513350739685616782}
     m_Duration: 0.5
     m_TimeScale: 1
-    m_ParentTrack: {fileID: -7312929622186933181}
+    m_ParentTrack: {fileID: -9145178931433124522}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: -1
@@ -253,11 +126,11 @@ MonoBehaviour:
   postplaybackResetToDefault: 1
   mixerDataMode: 0
   subTracks:
-  - {fileID: -948897421353596121}
-  masterTrack: {fileID: -7312929622186933181}
+  - {fileID: -2356173347869522725}
+  masterTrack: {fileID: -9145178931433124522}
   tweenableIndex: 0
   tweenableMember: Offset
---- !u!114 &-6310499526104577520
+--- !u!114 &-8618330333836206975
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -267,7 +140,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 248cc94dcf0c572479b914b281fe5c45, type: 3}
-  m_Name: MaterialTweenClip(Clone)
+  m_Name: MaterialTweenClip(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   template:
     callbackVoidEvents: []
@@ -278,12 +151,256 @@ MonoBehaviour:
     callbackAudioEvents: []
     clip:
       m_Version: 1
-      m_Start: 2
+      m_Start: 0
       m_ClipIn: 0
-      m_Asset: {fileID: -6310499526104577520}
-      m_Duration: 2.000000000000001
+      m_Asset: {fileID: -8618330333836206975}
+      m_Duration: 1
       m_TimeScale: 1
-      m_ParentTrack: {fileID: -7551490303413112527}
+      m_ParentTrack: {fileID: 6443860198376018017}
+      m_EaseInDuration: 0
+      m_EaseOutDuration: 0
+      m_BlendInDuration: -1
+      m_BlendOutDuration: -1
+      m_MixInCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_MixOutCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_BlendInCurveMode: 0
+      m_BlendOutCurveMode: 0
+      m_ExposedParameterNames: []
+      m_AnimationCurves: {fileID: 0}
+      m_Recordable: 0
+      m_PostExtrapolationMode: 0
+      m_PreExtrapolationMode: 0
+      m_PostExtrapolationTime: 0
+      m_PreExtrapolationTime: 0
+      m_DisplayName: MaterialTweenClip
+    easeStyle: 0
+    useCustomCurve: 1
+    useCurveAsset: 0
+    customCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    animationCurveAsset: {fileID: 0}
+    startTime: 0
+    endTime: 1
+    m_FloatParameters:
+    - m_Enable: 1
+      m_IndividualChannels: 0
+      m_Tween:
+        m_Curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_Type: 1
+        m_Ease: 0
+        m_Value: 1
+        m_Multiplier: 1
+      m_TweenIndividualChannels:
+      - m_Curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_Type: 0
+        m_Ease: 0
+        m_Value: 0
+        m_Multiplier: 1
+        m_NoiseMode: 0
+        m_NoiseChannelConfig:
+          frequency:
+            m_Curve:
+              serializedVersion: 2
+              m_Curve:
+              - serializedVersion: 3
+                time: 0
+                value: 0
+                inSlope: 0
+                outSlope: 1
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              - serializedVersion: 3
+                time: 1
+                value: 1
+                inSlope: 1
+                outSlope: 0
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+            m_Type: 0
+            m_Ease: 0
+            m_Value: 1
+            m_Multiplier: 1
+          amplitude:
+            m_Curve:
+              serializedVersion: 2
+              m_Curve:
+              - serializedVersion: 3
+                time: 0
+                value: 0
+                inSlope: 0
+                outSlope: 1
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              - serializedVersion: 3
+                time: 1
+                value: 1
+                inSlope: 1
+                outSlope: 0
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+            m_Type: 0
+            m_Ease: 0
+            m_Value: 1
+            m_Multiplier: 1
+          valueCenter:
+            m_Curve:
+              serializedVersion: 2
+              m_Curve:
+              - serializedVersion: 3
+                time: 0
+                value: 0
+                inSlope: 0
+                outSlope: 1
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              - serializedVersion: 3
+                time: 1
+                value: 1
+                inSlope: 1
+                outSlope: 0
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+            m_Type: 0
+            m_Ease: 0
+            m_Value: 0.5
+            m_Multiplier: 1
+          offset: 0
+          enable: 0
+          multiplier: 1
+      m_DisabledValue: 0
+      m_Start: 0
+      m_End: 4
+      m_StarEndData: {fileID: 0}
+      m_FromAsset: 0
+      m_PropertyName: _Amount
+    m_ColorParameters: []
+    m_VectorParameters: []
+--- !u!114 &-5134836349454671376
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 248cc94dcf0c572479b914b281fe5c45, type: 3}
+  m_Name: MaterialTweenClip(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  template:
+    callbackVoidEvents: []
+    callbackBoolEvents: []
+    callbackFloatEvents: []
+    callbackIntEvents: []
+    callbackStringEvents: []
+    callbackAudioEvents: []
+    clip:
+      m_Version: 1
+      m_Start: 1.5
+      m_ClipIn: 0
+      m_Asset: {fileID: -5134836349454671376}
+      m_Duration: 0.5
+      m_TimeScale: 1
+      m_ParentTrack: {fileID: 6443860198376018017}
       m_EaseInDuration: 0
       m_EaseOutDuration: 0
       m_BlendInDuration: -1
@@ -501,732 +618,6 @@ MonoBehaviour:
       m_PropertyName: _Amount
     m_ColorParameters: []
     m_VectorParameters: []
---- !u!114 &-4894653036215177778
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 248cc94dcf0c572479b914b281fe5c45, type: 3}
-  m_Name: MaterialTweenClip(Clone)
-  m_EditorClassIdentifier: 
-  template:
-    callbackVoidEvents: []
-    callbackBoolEvents: []
-    callbackFloatEvents: []
-    callbackIntEvents: []
-    callbackStringEvents: []
-    callbackAudioEvents: []
-    clip:
-      m_Version: 1
-      m_Start: 0
-      m_ClipIn: 0
-      m_Asset: {fileID: -4894653036215177778}
-      m_Duration: 1
-      m_TimeScale: 1
-      m_ParentTrack: {fileID: -7551490303413112527}
-      m_EaseInDuration: 0
-      m_EaseOutDuration: 0
-      m_BlendInDuration: -1
-      m_BlendOutDuration: -1
-      m_MixInCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      m_MixOutCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      m_BlendInCurveMode: 0
-      m_BlendOutCurveMode: 0
-      m_ExposedParameterNames: []
-      m_AnimationCurves: {fileID: 0}
-      m_Recordable: 0
-      m_PostExtrapolationMode: 0
-      m_PreExtrapolationMode: 0
-      m_PostExtrapolationTime: 0
-      m_PreExtrapolationTime: 0
-      m_DisplayName: MaterialTweenClip
-    easeStyle: 0
-    useCustomCurve: 1
-    useCurveAsset: 0
-    customCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 1
-        outSlope: 1
-        tangentMode: 34
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 1
-        outSlope: 1
-        tangentMode: 34
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    animationCurveAsset: {fileID: 0}
-    startTime: 0
-    endTime: 1
-    m_FloatParameters:
-    - m_Enable: 1
-      m_IndividualChannels: 0
-      m_Tween:
-        m_Curve:
-          serializedVersion: 2
-          m_Curve:
-          - serializedVersion: 3
-            time: 0
-            value: 0
-            inSlope: 0
-            outSlope: 1
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 1
-            value: 1
-            inSlope: 1
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        m_Type: 1
-        m_Ease: 0
-        m_Value: 1
-        m_Multiplier: 1
-      m_TweenIndividualChannels:
-      - m_Curve:
-          serializedVersion: 2
-          m_Curve:
-          - serializedVersion: 3
-            time: 0
-            value: 0
-            inSlope: 0
-            outSlope: 1
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 1
-            value: 1
-            inSlope: 1
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        m_Type: 0
-        m_Ease: 0
-        m_Value: 0
-        m_Multiplier: 1
-        m_NoiseMode: 0
-        m_NoiseChannelConfig:
-          frequency:
-            m_Curve:
-              serializedVersion: 2
-              m_Curve:
-              - serializedVersion: 3
-                time: 0
-                value: 0
-                inSlope: 0
-                outSlope: 1
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              - serializedVersion: 3
-                time: 1
-                value: 1
-                inSlope: 1
-                outSlope: 0
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-            m_Type: 0
-            m_Ease: 0
-            m_Value: 1
-            m_Multiplier: 1
-          amplitude:
-            m_Curve:
-              serializedVersion: 2
-              m_Curve:
-              - serializedVersion: 3
-                time: 0
-                value: 0
-                inSlope: 0
-                outSlope: 1
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              - serializedVersion: 3
-                time: 1
-                value: 1
-                inSlope: 1
-                outSlope: 0
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-            m_Type: 0
-            m_Ease: 0
-            m_Value: 1
-            m_Multiplier: 1
-          valueCenter:
-            m_Curve:
-              serializedVersion: 2
-              m_Curve:
-              - serializedVersion: 3
-                time: 0
-                value: 0
-                inSlope: 0
-                outSlope: 1
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              - serializedVersion: 3
-                time: 1
-                value: 1
-                inSlope: 1
-                outSlope: 0
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-            m_Type: 0
-            m_Ease: 0
-            m_Value: 0.5
-            m_Multiplier: 1
-          offset: 0
-          enable: 0
-          multiplier: 1
-      m_DisabledValue: 0
-      m_Start: 0
-      m_End: 4
-      m_StarEndData: {fileID: 0}
-      m_FromAsset: 0
-      m_PropertyName: _Amount
-    m_ColorParameters: []
-    m_VectorParameters: []
---- !u!114 &-4644438671140376833
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 392fe0f1b2a566249bee57106b17f569, type: 3}
-  m_Name: FloatTweenClip(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  template:
-    callbackVoidEvents: []
-    callbackBoolEvents: []
-    callbackFloatEvents: []
-    callbackIntEvents: []
-    callbackStringEvents: []
-    callbackAudioEvents: []
-    clip:
-      m_Version: 1
-      m_Start: 1
-      m_ClipIn: 0
-      m_Asset: {fileID: -4644438671140376833}
-      m_Duration: 1
-      m_TimeScale: 1
-      m_ParentTrack: {fileID: -7312929622186933181}
-      m_EaseInDuration: 0
-      m_EaseOutDuration: 0
-      m_BlendInDuration: -1
-      m_BlendOutDuration: -1
-      m_MixInCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      m_MixOutCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      m_BlendInCurveMode: 0
-      m_BlendOutCurveMode: 0
-      m_ExposedParameterNames: []
-      m_AnimationCurves: {fileID: 0}
-      m_Recordable: 0
-      m_PostExtrapolationMode: 0
-      m_PreExtrapolationMode: 0
-      m_PostExtrapolationTime: 0
-      m_PreExtrapolationTime: 0
-      m_DisplayName: FloatTweenClip
-    easeStyle: 0
-    useCustomCurve: 0
-    useCurveAsset: 0
-    customCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 1
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 1
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    animationCurveAsset: {fileID: 0}
-    startTime: 0
-    endTime: 1
-    startEndValueTweenParameter:
-      m_Enable: 1
-      m_IndividualChannels: 0
-      m_Tween:
-        m_Curve:
-          serializedVersion: 2
-          m_Curve:
-          - serializedVersion: 3
-            time: 0
-            value: 0
-            inSlope: 0
-            outSlope: 1
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 1
-            value: 1
-            inSlope: 1
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        m_Type: 1
-        m_Ease: 0
-        m_Value: 1
-        m_Multiplier: 1
-      m_TweenIndividualChannels:
-      - m_Curve:
-          serializedVersion: 2
-          m_Curve:
-          - serializedVersion: 3
-            time: 0
-            value: 0
-            inSlope: 0
-            outSlope: 1
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 1
-            value: 1
-            inSlope: 1
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        m_Type: 0
-        m_Ease: 0
-        m_Value: 0
-        m_Multiplier: 1
-        m_NoiseMode: 0
-        m_NoiseChannelConfig:
-          frequency:
-            m_Curve:
-              serializedVersion: 2
-              m_Curve:
-              - serializedVersion: 3
-                time: 0
-                value: 0
-                inSlope: 0
-                outSlope: 1
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              - serializedVersion: 3
-                time: 1
-                value: 1
-                inSlope: 1
-                outSlope: 0
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-            m_Type: 0
-            m_Ease: 0
-            m_Value: 1
-            m_Multiplier: 1
-          amplitude:
-            m_Curve:
-              serializedVersion: 2
-              m_Curve:
-              - serializedVersion: 3
-                time: 0
-                value: 0
-                inSlope: 0
-                outSlope: 1
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              - serializedVersion: 3
-                time: 1
-                value: 1
-                inSlope: 1
-                outSlope: 0
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-            m_Type: 0
-            m_Ease: 0
-            m_Value: 1
-            m_Multiplier: 1
-          valueCenter:
-            m_Curve:
-              serializedVersion: 2
-              m_Curve:
-              - serializedVersion: 3
-                time: 0
-                value: 0
-                inSlope: 0
-                outSlope: 1
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              - serializedVersion: 3
-                time: 1
-                value: 1
-                inSlope: 1
-                outSlope: 0
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-            m_Type: 0
-            m_Ease: 0
-            m_Value: 0.5
-            m_Multiplier: 1
-          offset: 0
-          enable: 0
-          multiplier: 1
-      m_DisabledValue: 0
-      m_Start: 0
-      m_End: 48
-      m_StarEndData: {fileID: 11400000, guid: 14264b808ed93c249ac0e8994b21f2cc, type: 2}
-      m_FromAsset: 1
---- !u!114 &-3439883416870033832
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 392fe0f1b2a566249bee57106b17f569, type: 3}
-  m_Name: FloatTweenClip(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  template:
-    callbackVoidEvents: []
-    callbackBoolEvents: []
-    callbackFloatEvents: []
-    callbackIntEvents: []
-    callbackStringEvents: []
-    callbackAudioEvents: []
-    clip:
-      m_Version: 1
-      m_Start: 2
-      m_ClipIn: 0
-      m_Asset: {fileID: -3439883416870033832}
-      m_Duration: 0.5
-      m_TimeScale: 1
-      m_ParentTrack: {fileID: -7312929622186933181}
-      m_EaseInDuration: 0
-      m_EaseOutDuration: 0
-      m_BlendInDuration: -1
-      m_BlendOutDuration: -1
-      m_MixInCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      m_MixOutCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      m_BlendInCurveMode: 0
-      m_BlendOutCurveMode: 0
-      m_ExposedParameterNames: []
-      m_AnimationCurves: {fileID: 0}
-      m_Recordable: 0
-      m_PostExtrapolationMode: 1
-      m_PreExtrapolationMode: 0
-      m_PostExtrapolationTime: Infinity
-      m_PreExtrapolationTime: 0
-      m_DisplayName: FloatTweenClip
-    easeStyle: 0
-    useCustomCurve: 1
-    useCurveAsset: 0
-    customCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 2.6041338
-        outSlope: 2.6041338
-        tangentMode: 0
-        weightedMode: 2
-        inWeight: 0
-        outWeight: 0.3473319
-      - serializedVersion: 3
-        time: 1.0010376
-        value: 1
-        inSlope: 0.041864537
-        outSlope: 0.041864537
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.056410253
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    animationCurveAsset: {fileID: 0}
-    startTime: 0
-    endTime: 1
-    startEndValueTweenParameter:
-      m_Enable: 1
-      m_IndividualChannels: 0
-      m_Tween:
-        m_Curve:
-          serializedVersion: 2
-          m_Curve:
-          - serializedVersion: 3
-            time: 0
-            value: 0
-            inSlope: 0
-            outSlope: 1
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 1
-            value: 1
-            inSlope: 1
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        m_Type: 1
-        m_Ease: 0
-        m_Value: 1
-        m_Multiplier: 1
-      m_TweenIndividualChannels:
-      - m_Curve:
-          serializedVersion: 2
-          m_Curve:
-          - serializedVersion: 3
-            time: 0
-            value: 0
-            inSlope: 0
-            outSlope: 1
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 1
-            value: 1
-            inSlope: 1
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        m_Type: 0
-        m_Ease: 0
-        m_Value: 0
-        m_Multiplier: 1
-        m_NoiseMode: 0
-        m_NoiseChannelConfig:
-          frequency:
-            m_Curve:
-              serializedVersion: 2
-              m_Curve:
-              - serializedVersion: 3
-                time: 0
-                value: 0
-                inSlope: 0
-                outSlope: 1
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              - serializedVersion: 3
-                time: 1
-                value: 1
-                inSlope: 1
-                outSlope: 0
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-            m_Type: 0
-            m_Ease: 0
-            m_Value: 1
-            m_Multiplier: 1
-          amplitude:
-            m_Curve:
-              serializedVersion: 2
-              m_Curve:
-              - serializedVersion: 3
-                time: 0
-                value: 0
-                inSlope: 0
-                outSlope: 1
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              - serializedVersion: 3
-                time: 1
-                value: 1
-                inSlope: 1
-                outSlope: 0
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-            m_Type: 0
-            m_Ease: 0
-            m_Value: 1
-            m_Multiplier: 1
-          valueCenter:
-            m_Curve:
-              serializedVersion: 2
-              m_Curve:
-              - serializedVersion: 3
-                time: 0
-                value: 0
-                inSlope: 0
-                outSlope: 1
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              - serializedVersion: 3
-                time: 1
-                value: 1
-                inSlope: 1
-                outSlope: 0
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-            m_Type: 0
-            m_Ease: 0
-            m_Value: 0.5
-            m_Multiplier: 1
-          offset: 0
-          enable: 0
-          multiplier: 1
-      m_DisabledValue: 0
-      m_Start: 0
-      m_End: 12
-      m_StarEndData: {fileID: 11400000, guid: 14264b808ed93c249ac0e8994b21f2cc, type: 2}
-      m_FromAsset: 0
 --- !u!114 &-3093614015558869942
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1239,11 +630,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: 
-  m_Time: 2
+  m_Time: 1.5
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: 093f02bc078e1c74fbd5657dcaa6d5a1, type: 2}
---- !u!114 &-948897421353596121
+--- !u!114 &-2356173347869522725
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1261,16 +652,16 @@ MonoBehaviour:
   m_Muted: 0
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
-  m_Parent: {fileID: -7312929622186933181}
+  m_Parent: {fileID: -9145178931433124522}
   m_Children: []
   m_Clips:
   - m_Version: 1
     m_Start: 2.2833333333333323
     m_ClipIn: 0
-    m_Asset: {fileID: 4004352877345338278}
+    m_Asset: {fileID: 715077936892710934}
     m_Duration: 0.21666666666666767
     m_TimeScale: 1
-    m_ParentTrack: {fileID: -948897421353596121}
+    m_ParentTrack: {fileID: -2356173347869522725}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: -1
@@ -1302,7 +693,7 @@ MonoBehaviour:
   postplaybackResetToDefault: 1
   mixerDataMode: 0
   subTracks: []
-  masterTrack: {fileID: -7312929622186933181}
+  masterTrack: {fileID: -9145178931433124522}
   tweenableIndex: 0
   tweenableMember: Offset
 --- !u!114 &-905457366129174026
@@ -1342,32 +733,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Version: 0
   m_Tracks:
-  - {fileID: -7312929622186933181}
-  - {fileID: -7551490303413112527}
   - {fileID: 6965472774785455116}
+  - {fileID: -9145178931433124522}
+  - {fileID: 6443860198376018017}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 60
     m_ScenePreview: 1
   m_DurationMode: 0
   m_MarkerTrack: {fileID: -905457366129174026}
---- !u!114 &1392577458022679283
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
-  m_Name: Signal Emitter
-  m_EditorClassIdentifier: 
-  m_Time: 4.000000000000001
-  m_Retroactive: 0
-  m_EmitOnce: 0
-  m_Asset: {fileID: 11400000, guid: 7e4d21a4f2565a843a3aec9508d00301, type: 2}
---- !u!114 &2814235313912490174
+--- !u!114 &504836948473539372
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1377,7 +752,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 248cc94dcf0c572479b914b281fe5c45, type: 3}
-  m_Name: MaterialTweenClip
+  m_Name: MaterialTweenClip(Clone)(Clone)
   m_EditorClassIdentifier: 
   template:
     callbackVoidEvents: []
@@ -1390,10 +765,10 @@ MonoBehaviour:
       m_Version: 1
       m_Start: 1
       m_ClipIn: 0
-      m_Asset: {fileID: 2814235313912490174}
-      m_Duration: 1
+      m_Asset: {fileID: 504836948473539372}
+      m_Duration: 0.5
       m_TimeScale: 1
-      m_ParentTrack: {fileID: -7551490303413112527}
+      m_ParentTrack: {fileID: 6443860198376018017}
       m_EaseInDuration: 0
       m_EaseOutDuration: 0
       m_BlendInDuration: -1
@@ -1611,7 +986,7 @@ MonoBehaviour:
       m_PropertyName: _Amount
     m_ColorParameters: []
     m_VectorParameters: []
---- !u!114 &3357908661230854336
+--- !u!114 &715077936892710934
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1621,248 +996,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 392fe0f1b2a566249bee57106b17f569, type: 3}
-  m_Name: FloatTweenClip(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  template:
-    callbackVoidEvents: []
-    callbackBoolEvents: []
-    callbackFloatEvents: []
-    callbackIntEvents: []
-    callbackStringEvents: []
-    callbackAudioEvents: []
-    clip:
-      m_Version: 1
-      m_Start: 0
-      m_ClipIn: 0
-      m_Asset: {fileID: 3357908661230854336}
-      m_Duration: 1
-      m_TimeScale: 1
-      m_ParentTrack: {fileID: -7312929622186933181}
-      m_EaseInDuration: 0
-      m_EaseOutDuration: 0
-      m_BlendInDuration: -1
-      m_BlendOutDuration: -1
-      m_MixInCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      m_MixOutCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      m_BlendInCurveMode: 0
-      m_BlendOutCurveMode: 0
-      m_ExposedParameterNames: []
-      m_AnimationCurves: {fileID: 0}
-      m_Recordable: 0
-      m_PostExtrapolationMode: 0
-      m_PreExtrapolationMode: 0
-      m_PostExtrapolationTime: 0
-      m_PreExtrapolationTime: 0
-      m_DisplayName: FloatTweenClip
-    easeStyle: 0
-    useCustomCurve: 1
-    useCurveAsset: 0
-    customCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: -0.1336833
-        outSlope: -0.1336833
-        tangentMode: 0
-        weightedMode: 2
-        inWeight: 0
-        outWeight: 0.44830677
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 2.5145075
-        outSlope: 2.5145075
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.03384614
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    animationCurveAsset: {fileID: 0}
-    startTime: 0
-    endTime: 1
-    startEndValueTweenParameter:
-      m_Enable: 1
-      m_IndividualChannels: 0
-      m_Tween:
-        m_Curve:
-          serializedVersion: 2
-          m_Curve:
-          - serializedVersion: 3
-            time: 0
-            value: 0
-            inSlope: 0
-            outSlope: 1
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 1
-            value: 1
-            inSlope: 1
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        m_Type: 1
-        m_Ease: 0
-        m_Value: 1
-        m_Multiplier: 1
-      m_TweenIndividualChannels:
-      - m_Curve:
-          serializedVersion: 2
-          m_Curve:
-          - serializedVersion: 3
-            time: 0
-            value: 0
-            inSlope: 0
-            outSlope: 1
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 1
-            value: 1
-            inSlope: 1
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        m_Type: 0
-        m_Ease: 0
-        m_Value: 0
-        m_Multiplier: 1
-        m_NoiseMode: 0
-        m_NoiseChannelConfig:
-          frequency:
-            m_Curve:
-              serializedVersion: 2
-              m_Curve:
-              - serializedVersion: 3
-                time: 0
-                value: 0
-                inSlope: 0
-                outSlope: 1
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              - serializedVersion: 3
-                time: 1
-                value: 1
-                inSlope: 1
-                outSlope: 0
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-            m_Type: 0
-            m_Ease: 0
-            m_Value: 1
-            m_Multiplier: 1
-          amplitude:
-            m_Curve:
-              serializedVersion: 2
-              m_Curve:
-              - serializedVersion: 3
-                time: 0
-                value: 0
-                inSlope: 0
-                outSlope: 1
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              - serializedVersion: 3
-                time: 1
-                value: 1
-                inSlope: 1
-                outSlope: 0
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-            m_Type: 0
-            m_Ease: 0
-            m_Value: 1
-            m_Multiplier: 1
-          valueCenter:
-            m_Curve:
-              serializedVersion: 2
-              m_Curve:
-              - serializedVersion: 3
-                time: 0
-                value: 0
-                inSlope: 0
-                outSlope: 1
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              - serializedVersion: 3
-                time: 1
-                value: 1
-                inSlope: 1
-                outSlope: 0
-                tangentMode: 0
-                weightedMode: 0
-                inWeight: 0
-                outWeight: 0
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-            m_Type: 0
-            m_Ease: 0
-            m_Value: 0.5
-            m_Multiplier: 1
-          offset: 0
-          enable: 0
-          multiplier: 1
-      m_DisabledValue: 0
-      m_Start: 0
-      m_End: 48
-      m_StarEndData: {fileID: 11400000, guid: 14264b808ed93c249ac0e8994b21f2cc, type: 2}
-      m_FromAsset: 1
---- !u!114 &4004352877345338278
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 392fe0f1b2a566249bee57106b17f569, type: 3}
-  m_Name: FloatTweenClip(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_Name: FloatTweenClip(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   template:
     callbackVoidEvents: []
@@ -1875,10 +1009,10 @@ MonoBehaviour:
       m_Version: 1
       m_Start: 2.2833333333333323
       m_ClipIn: 0
-      m_Asset: {fileID: 4004352877345338278}
+      m_Asset: {fileID: 715077936892710934}
       m_Duration: 0.21666666666666767
       m_TimeScale: 1
-      m_ParentTrack: {fileID: -948897421353596121}
+      m_ParentTrack: {fileID: -2356173347869522725}
       m_EaseInDuration: 0
       m_EaseOutDuration: 0
       m_BlendInDuration: -1
@@ -2102,6 +1236,390 @@ MonoBehaviour:
       m_End: 0.2
       m_StarEndData: {fileID: 0}
       m_FromAsset: 0
+--- !u!114 &1392577458022679283
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
+  m_Name: Signal Emitter
+  m_EditorClassIdentifier: 
+  m_Time: 2
+  m_Retroactive: 0
+  m_EmitOnce: 0
+  m_Asset: {fileID: 11400000, guid: 7e4d21a4f2565a843a3aec9508d00301, type: 2}
+--- !u!114 &2921293946700160264
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 392fe0f1b2a566249bee57106b17f569, type: 3}
+  m_Name: FloatTweenClip(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  template:
+    callbackVoidEvents: []
+    callbackBoolEvents: []
+    callbackFloatEvents: []
+    callbackIntEvents: []
+    callbackStringEvents: []
+    callbackAudioEvents: []
+    clip:
+      m_Version: 1
+      m_Start: 0
+      m_ClipIn: 0
+      m_Asset: {fileID: 2921293946700160264}
+      m_Duration: 1
+      m_TimeScale: 1
+      m_ParentTrack: {fileID: -9145178931433124522}
+      m_EaseInDuration: 0
+      m_EaseOutDuration: 0
+      m_BlendInDuration: -1
+      m_BlendOutDuration: -1
+      m_MixInCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_MixOutCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_BlendInCurveMode: 0
+      m_BlendOutCurveMode: 0
+      m_ExposedParameterNames: []
+      m_AnimationCurves: {fileID: 0}
+      m_Recordable: 0
+      m_PostExtrapolationMode: 0
+      m_PreExtrapolationMode: 0
+      m_PostExtrapolationTime: 0
+      m_PreExtrapolationTime: 0
+      m_DisplayName: FloatTweenClip
+    easeStyle: 0
+    useCustomCurve: 1
+    useCurveAsset: 0
+    customCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: -0.1336833
+        outSlope: -0.1336833
+        tangentMode: 0
+        weightedMode: 2
+        inWeight: 0
+        outWeight: 0.44830677
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 2.5145075
+        outSlope: 2.5145075
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.03384614
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    animationCurveAsset: {fileID: 0}
+    startTime: 0
+    endTime: 1
+    startEndValueTweenParameter:
+      m_Enable: 1
+      m_IndividualChannels: 0
+      m_Tween:
+        m_Curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_Type: 1
+        m_Ease: 0
+        m_Value: 1
+        m_Multiplier: 1
+      m_TweenIndividualChannels:
+      - m_Curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_Type: 0
+        m_Ease: 0
+        m_Value: 0
+        m_Multiplier: 1
+        m_NoiseMode: 0
+        m_NoiseChannelConfig:
+          frequency:
+            m_Curve:
+              serializedVersion: 2
+              m_Curve:
+              - serializedVersion: 3
+                time: 0
+                value: 0
+                inSlope: 0
+                outSlope: 1
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              - serializedVersion: 3
+                time: 1
+                value: 1
+                inSlope: 1
+                outSlope: 0
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+            m_Type: 0
+            m_Ease: 0
+            m_Value: 1
+            m_Multiplier: 1
+          amplitude:
+            m_Curve:
+              serializedVersion: 2
+              m_Curve:
+              - serializedVersion: 3
+                time: 0
+                value: 0
+                inSlope: 0
+                outSlope: 1
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              - serializedVersion: 3
+                time: 1
+                value: 1
+                inSlope: 1
+                outSlope: 0
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+            m_Type: 0
+            m_Ease: 0
+            m_Value: 1
+            m_Multiplier: 1
+          valueCenter:
+            m_Curve:
+              serializedVersion: 2
+              m_Curve:
+              - serializedVersion: 3
+                time: 0
+                value: 0
+                inSlope: 0
+                outSlope: 1
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              - serializedVersion: 3
+                time: 1
+                value: 1
+                inSlope: 1
+                outSlope: 0
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+            m_Type: 0
+            m_Ease: 0
+            m_Value: 0.5
+            m_Multiplier: 1
+          offset: 0
+          enable: 0
+          multiplier: 1
+      m_DisabledValue: 0
+      m_Start: 0
+      m_End: 48
+      m_StarEndData: {fileID: 11400000, guid: 14264b808ed93c249ac0e8994b21f2cc, type: 2}
+      m_FromAsset: 1
+--- !u!114 &6443860198376018017
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c1d9d66045eb74f9f9a564e5b6bc3d, type: 3}
+  m_Name: Material Asset Tween Track
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Version: 1
+    m_Start: 0
+    m_ClipIn: 0
+    m_Asset: {fileID: -8618330333836206975}
+    m_Duration: 1
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 6443860198376018017}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: MaterialTweenClip
+  - m_Version: 1
+    m_Start: 1
+    m_ClipIn: 0
+    m_Asset: {fileID: 504836948473539372}
+    m_Duration: 0.5
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 6443860198376018017}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: MaterialTweenClip
+  - m_Version: 1
+    m_Start: 1.5
+    m_ClipIn: 0
+    m_Asset: {fileID: -5134836349454671376}
+    m_Duration: 0.5
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 6443860198376018017}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: Infinity
+    m_PreExtrapolationTime: 0
+    m_DisplayName: MaterialTweenClip
+  m_Markers:
+    m_Objects: []
+  postplaybackResetToDefault: 1
+  mixerDataMode: 0
+  subTracks: []
+  masterTrack: {fileID: 6443860198376018017}
+  clampColor: 0
 --- !u!114 &6965472774785455116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2127,3 +1645,485 @@ MonoBehaviour:
     m_Objects:
     - {fileID: 1392577458022679283}
     - {fileID: -3093614015558869942}
+--- !u!114 &7493515286143665451
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 392fe0f1b2a566249bee57106b17f569, type: 3}
+  m_Name: FloatTweenClip(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  template:
+    callbackVoidEvents: []
+    callbackBoolEvents: []
+    callbackFloatEvents: []
+    callbackIntEvents: []
+    callbackStringEvents: []
+    callbackAudioEvents: []
+    clip:
+      m_Version: 1
+      m_Start: 1
+      m_ClipIn: 0
+      m_Asset: {fileID: 7493515286143665451}
+      m_Duration: 0.5
+      m_TimeScale: 1
+      m_ParentTrack: {fileID: -9145178931433124522}
+      m_EaseInDuration: 0
+      m_EaseOutDuration: 0
+      m_BlendInDuration: -1
+      m_BlendOutDuration: -1
+      m_MixInCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_MixOutCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_BlendInCurveMode: 0
+      m_BlendOutCurveMode: 0
+      m_ExposedParameterNames: []
+      m_AnimationCurves: {fileID: 0}
+      m_Recordable: 0
+      m_PostExtrapolationMode: 0
+      m_PreExtrapolationMode: 0
+      m_PostExtrapolationTime: 0
+      m_PreExtrapolationTime: 0
+      m_DisplayName: FloatTweenClip
+    easeStyle: 0
+    useCustomCurve: 0
+    useCurveAsset: 0
+    customCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    animationCurveAsset: {fileID: 0}
+    startTime: 0
+    endTime: 1
+    startEndValueTweenParameter:
+      m_Enable: 1
+      m_IndividualChannels: 0
+      m_Tween:
+        m_Curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_Type: 1
+        m_Ease: 0
+        m_Value: 1
+        m_Multiplier: 1
+      m_TweenIndividualChannels:
+      - m_Curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_Type: 0
+        m_Ease: 0
+        m_Value: 0
+        m_Multiplier: 1
+        m_NoiseMode: 0
+        m_NoiseChannelConfig:
+          frequency:
+            m_Curve:
+              serializedVersion: 2
+              m_Curve:
+              - serializedVersion: 3
+                time: 0
+                value: 0
+                inSlope: 0
+                outSlope: 1
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              - serializedVersion: 3
+                time: 1
+                value: 1
+                inSlope: 1
+                outSlope: 0
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+            m_Type: 0
+            m_Ease: 0
+            m_Value: 1
+            m_Multiplier: 1
+          amplitude:
+            m_Curve:
+              serializedVersion: 2
+              m_Curve:
+              - serializedVersion: 3
+                time: 0
+                value: 0
+                inSlope: 0
+                outSlope: 1
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              - serializedVersion: 3
+                time: 1
+                value: 1
+                inSlope: 1
+                outSlope: 0
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+            m_Type: 0
+            m_Ease: 0
+            m_Value: 1
+            m_Multiplier: 1
+          valueCenter:
+            m_Curve:
+              serializedVersion: 2
+              m_Curve:
+              - serializedVersion: 3
+                time: 0
+                value: 0
+                inSlope: 0
+                outSlope: 1
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              - serializedVersion: 3
+                time: 1
+                value: 1
+                inSlope: 1
+                outSlope: 0
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+            m_Type: 0
+            m_Ease: 0
+            m_Value: 0.5
+            m_Multiplier: 1
+          offset: 0
+          enable: 0
+          multiplier: 1
+      m_DisabledValue: 0
+      m_Start: 0
+      m_End: 24
+      m_StarEndData: {fileID: 11400000, guid: 14264b808ed93c249ac0e8994b21f2cc, type: 2}
+      m_FromAsset: 0
+--- !u!114 &8513350739685616782
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 392fe0f1b2a566249bee57106b17f569, type: 3}
+  m_Name: FloatTweenClip(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  template:
+    callbackVoidEvents: []
+    callbackBoolEvents: []
+    callbackFloatEvents: []
+    callbackIntEvents: []
+    callbackStringEvents: []
+    callbackAudioEvents: []
+    clip:
+      m_Version: 1
+      m_Start: 1.5
+      m_ClipIn: 0
+      m_Asset: {fileID: 8513350739685616782}
+      m_Duration: 0.5
+      m_TimeScale: 1
+      m_ParentTrack: {fileID: -9145178931433124522}
+      m_EaseInDuration: 0
+      m_EaseOutDuration: 0
+      m_BlendInDuration: -1
+      m_BlendOutDuration: -1
+      m_MixInCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_MixOutCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_BlendInCurveMode: 0
+      m_BlendOutCurveMode: 0
+      m_ExposedParameterNames: []
+      m_AnimationCurves: {fileID: 0}
+      m_Recordable: 0
+      m_PostExtrapolationMode: 1
+      m_PreExtrapolationMode: 0
+      m_PostExtrapolationTime: Infinity
+      m_PreExtrapolationTime: 0
+      m_DisplayName: FloatTweenClip
+    easeStyle: 0
+    useCustomCurve: 1
+    useCurveAsset: 0
+    customCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 2.6041338
+        outSlope: 2.6041338
+        tangentMode: 0
+        weightedMode: 2
+        inWeight: 0
+        outWeight: 0.3473319
+      - serializedVersion: 3
+        time: 1.0010376
+        value: 1
+        inSlope: 0.041864537
+        outSlope: 0.041864537
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.056410253
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    animationCurveAsset: {fileID: 0}
+    startTime: 0
+    endTime: 1
+    startEndValueTweenParameter:
+      m_Enable: 1
+      m_IndividualChannels: 0
+      m_Tween:
+        m_Curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_Type: 1
+        m_Ease: 0
+        m_Value: 1
+        m_Multiplier: 1
+      m_TweenIndividualChannels:
+      - m_Curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_Type: 0
+        m_Ease: 0
+        m_Value: 0
+        m_Multiplier: 1
+        m_NoiseMode: 0
+        m_NoiseChannelConfig:
+          frequency:
+            m_Curve:
+              serializedVersion: 2
+              m_Curve:
+              - serializedVersion: 3
+                time: 0
+                value: 0
+                inSlope: 0
+                outSlope: 1
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              - serializedVersion: 3
+                time: 1
+                value: 1
+                inSlope: 1
+                outSlope: 0
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+            m_Type: 0
+            m_Ease: 0
+            m_Value: 1
+            m_Multiplier: 1
+          amplitude:
+            m_Curve:
+              serializedVersion: 2
+              m_Curve:
+              - serializedVersion: 3
+                time: 0
+                value: 0
+                inSlope: 0
+                outSlope: 1
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              - serializedVersion: 3
+                time: 1
+                value: 1
+                inSlope: 1
+                outSlope: 0
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+            m_Type: 0
+            m_Ease: 0
+            m_Value: 1
+            m_Multiplier: 1
+          valueCenter:
+            m_Curve:
+              serializedVersion: 2
+              m_Curve:
+              - serializedVersion: 3
+                time: 0
+                value: 0
+                inSlope: 0
+                outSlope: 1
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              - serializedVersion: 3
+                time: 1
+                value: 1
+                inSlope: 1
+                outSlope: 0
+                tangentMode: 0
+                weightedMode: 0
+                inWeight: 0
+                outWeight: 0
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+            m_Type: 0
+            m_Ease: 0
+            m_Value: 0.5
+            m_Multiplier: 1
+          offset: 0
+          enable: 0
+          multiplier: 1
+      m_DisabledValue: 0
+      m_Start: 0
+      m_End: 12
+      m_StarEndData: {fileID: 11400000, guid: 14264b808ed93c249ac0e8994b21f2cc, type: 2}
+      m_FromAsset: 0
