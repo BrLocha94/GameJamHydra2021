@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d645f33727a6b24ea8164fcad4abf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceInitialState: 1
+  forceInitialState: 2
   stateMachine:
   - state: 1
     allowedTransitions: 02000000
