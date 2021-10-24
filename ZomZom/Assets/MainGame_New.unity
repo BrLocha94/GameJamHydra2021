@@ -2928,6 +2928,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a941242e9f561674db2013fd88f3fc22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textPlays: {fileID: 1792892062}
+  textWin: {fileID: 1442674616}
   fireLinkColumns:
   - <Slots>k__BackingField:
     - {fileID: 769826498}

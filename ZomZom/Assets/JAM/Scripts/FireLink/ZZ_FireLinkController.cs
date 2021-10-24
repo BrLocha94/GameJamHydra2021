@@ -6,9 +6,18 @@ using UnityEngine.Events;
 
 public class ZZ_FireLinkController : MonoBehaviour
 {
-    [SerializeField] private FireLinkColumn[] fireLinkColumns;
-    [SerializeField] private SymbolsDataAsset symbolDataAsset;
-    [SerializeField] private SpriteRendererGroup gridSpriteRendererGroup;
+    [Header("Direct references to text")]
+    [SerializeField]
+    private UiTextMesh textPlays;
+    [SerializeField]
+    private UiTextMesh textWin;
+    [Space]
+    [SerializeField]
+    private FireLinkColumn[] fireLinkColumns;
+    [SerializeField]
+    private SymbolsDataAsset symbolDataAsset;
+    [SerializeField]
+    private SpriteRendererGroup gridSpriteRendererGroup;
 
     private List<ZZ_FireLink_Grid_Slot> earnedSymbolsList = new List<ZZ_FireLink_Grid_Slot>();
     private List<ZZ_FireLink_Grid_Slot> earnedRevealedSymbolsList = new List<ZZ_FireLink_Grid_Slot>();
@@ -34,6 +43,8 @@ public class ZZ_FireLinkController : MonoBehaviour
     public UnityEvent OnPlayEnded;
     public UnityEvent OnSymbolsRevealOut;
     public UnityEvent OnSymbolWinRevealInEnded;
+
+    private const int DEFAULT_FIRELINK_WIN = 1500;
 
     private void Awake()
     {
@@ -103,6 +114,8 @@ public class ZZ_FireLinkController : MonoBehaviour
 
     public IEnumerator StartFireLink()
     {
+        textPlays.UpdateText(0);
+        textWin.UpdateTextFormatedCash(0);
 
         currentPlayIndex = 0;
 
@@ -112,14 +125,22 @@ public class ZZ_FireLinkController : MonoBehaviour
 
         gridSpriteRendererGroup.groupAlpha = 1;
 
+        int winCount = 0;
+
         for (int i = 0; i < plays.Count; i++)
         {
+            textPlays.UpdateText(i + 1);
+
             SetPlaySymbols(currentPlay);
             yield return SymbolsInRoutine(i != 0);
             yield return new WaitForSeconds(delayBeforeHideSymbols);
             yield return SymbolsOutRoutine();
             yield return new WaitForSeconds(delayBetweenPlays);
             earnedAnimatedSymbolsList.Clear();
+
+            winCount += GetCurrentPlayWin();
+            textWin.UpdateTextFormatedCash(winCount);
+
             currentPlayIndex++;
         }
         earnedSymbolsList.Clear();
@@ -134,6 +155,25 @@ public class ZZ_FireLinkController : MonoBehaviour
                 slot.HideText();
             }
         }
+
+        BalanceManager.UpdateWinAmount(winCount);
+    }
+
+    private int GetTotalWinOnPlay()
+    {
+        int count = 0;
+
+        foreach(FireLinkPlay play in plays)
+        {
+            count += play.winSymbolsCoords.Length;
+        }
+
+        return count * DEFAULT_FIRELINK_WIN;
+    }
+
+    private int GetCurrentPlayWin()
+    {
+        return plays[currentPlayIndex].winSymbolsCoords.Length * DEFAULT_FIRELINK_WIN;
     }
 
     private void SetPlaySymbols(FireLinkPlay play)

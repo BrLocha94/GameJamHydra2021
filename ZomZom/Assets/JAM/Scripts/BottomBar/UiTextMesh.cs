@@ -23,6 +23,11 @@ public class UiTextMesh : MonoBehaviour
         targetText.text = prefix + text + sufix;
     }
 
+    public void UpdateText(int value)
+    {
+        targetText.text = prefix + value.ToString() + sufix;
+    }
+
     public void UpdateTextFormatedCash(int value)
     {
         targetText.text = prefix + value.FormatStringCashNoCents() + sufix;

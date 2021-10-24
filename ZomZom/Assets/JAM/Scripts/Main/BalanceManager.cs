@@ -18,6 +18,13 @@ public static class BalanceManager
         denomination = value;
     }
 
+    public static void UpdateWinAmount(int value)
+    {
+        win = value;
+        AddBalance(win);
+        onWinChange?.Invoke(win);
+    }
+
     public static void AddBalance(int value)
     {
         balance += value;
