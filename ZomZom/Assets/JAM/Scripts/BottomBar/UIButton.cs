@@ -8,6 +8,8 @@ using UnityEngine.UI;
 public class UIButton : MonoBehaviour
 {
     [SerializeField]
+    private float delay = 0f;
+    [SerializeField]
     private List<GameStates> allowedGameStates = new List<GameStates>();
     [Space]
     [SerializeField]
@@ -19,7 +21,12 @@ public class UIButton : MonoBehaviour
 
         if (allowedGameStates.Contains(currentState))
         {
-            onClickCallback?.Invoke();
+            Invoke(nameof(DelayedCall), delay);
         }
+    }
+
+    private void DelayedCall()
+    {
+        onClickCallback?.Invoke();
     }
 }

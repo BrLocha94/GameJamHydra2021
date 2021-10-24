@@ -2724,7 +2724,6 @@ GameObject:
   - component: {fileID: 879768902}
   - component: {fileID: 879768898}
   - component: {fileID: 879768897}
-  - component: {fileID: 879768901}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -2872,7 +2871,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879768895}
   m_CullTransparentMesh: 1
---- !u!114 &879768901
+--- !u!114 &879768902
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2881,11 +2880,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 879768895}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6363dd41db0dfee4baec50d3317d76a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d72634b79eb00843b46a037e95e4b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.12
-  onClick:
+  allowedGameStates: 02000000
+  onClickCallback:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1173290362}
@@ -2900,22 +2900,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &879768902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879768895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d72634b79eb00843b46a037e95e4b76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allowedGameStates: 02000000
-  onClickCallback:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &942700178
 GameObject:
   m_ObjectHideFlags: 0
@@ -3258,6 +3242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d72634b79eb00843b46a037e95e4b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0
   allowedGameStates: 02000000
   onClickCallback:
     m_PersistentCalls:
@@ -3845,6 +3830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d72634b79eb00843b46a037e95e4b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0
   allowedGameStates: 02000000
   onClickCallback:
     m_PersistentCalls:
@@ -5537,6 +5523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d72634b79eb00843b46a037e95e4b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0
   allowedGameStates: 02000000
   onClickCallback:
     m_PersistentCalls:
@@ -7236,6 +7223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d72634b79eb00843b46a037e95e4b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0
   allowedGameStates: 02000000
   onClickCallback:
     m_PersistentCalls:

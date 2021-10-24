@@ -6,7 +6,15 @@ using UnityEngine;
 public class PlayManager
 {
     private static PlayManager _instance;
-    public static PlayManager instance { get { if (_instance == null) _instance = new PlayManager(); return _instance; } }
+    public static PlayManager instance
+    {
+        get
+        {
+            if (_instance == null)
+                _instance = new PlayManager();
+            return _instance;
+        }
+    }
 
     private System.Random random = new System.Random();
     private Math currentMath;
