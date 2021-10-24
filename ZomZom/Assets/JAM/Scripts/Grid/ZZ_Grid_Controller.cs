@@ -14,6 +14,11 @@ public class ZZ_Grid_Controller : MonoBehaviour
         for (int i = 0; i < reels.Count; i++)
         {
             reels[i].Offset = 0;
+
+            for (int j = 0; j < reels[i].slots.Count; j++)
+            {
+                reels[i].SetSymbol(symbolsDataAsset.GetDataByType((ESymbol)Random.Range(0,5)), j);
+            }
         }
     }
     public void PrepareNextPlay(GridPlaySetup setup)
