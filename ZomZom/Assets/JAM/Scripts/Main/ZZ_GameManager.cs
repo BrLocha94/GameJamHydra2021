@@ -95,21 +95,21 @@ public class ZZ_GameManager : MonoBehaviour
                  {
                     new List<(ESymbol symbol, int index)>()
                     {
-                       (GetRandomSymbol(), index1),
-                       (GetRandomSymbol(), index2),
-                       (GetRandomSymbol(), index3)
+                       (ESymbol.P3, index1),
+                       (ESymbol.P4, index2),
+                       (ESymbol.Bonus, index3)
                     },
                     new List<(ESymbol symbol, int index)>()
                     {
-                       (GetRandomSymbol(), index1),
-                       (GetRandomSymbol(), index2),
-                       (GetRandomSymbol(), index3)
+                       (ESymbol.Bonus, index1),
+                       (ESymbol.P1, index2),
+                       (ESymbol.P2, index3)
                     },
                     new List<(ESymbol symbol, int index)>()
                     {
-                       (GetRandomSymbol(), index1),
-                       (GetRandomSymbol(), index2),
-                       (GetRandomSymbol(), index3)
+                       (ESymbol.P5, index1),
+                       (ESymbol.Bonus, index2),
+                       (ESymbol.P6, index3)
                     }
                  },
             fromToReelAnimation = new List<Vector2>()

@@ -2394,6 +2394,11 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
         type: 3}
+      propertyPath: moneyAmount.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
       propertyPath: targetSlots.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -2402,6 +2407,47 @@ PrefabInstance:
       propertyPath: targetSymbol.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: gridExpansion.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: moneyAmount.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: ea37ff0334f1b24459827aba80389089,
+        type: 3}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: moneyAmount.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: d1c85c5cdbe001e4ea8172fc108851a6,
+        type: 3}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: moneyAmount.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b314b694fd2ab14491e82062599b048,
+        type: 3}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: moneyAmount.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: d2547470fcd21f248bdc2326ba2d6b80,
+        type: 3}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: moneyAmount.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 3507f9db3a556c641aa5bed1c6893778,
+        type: 3}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: moneyAmount.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 8d1321513be904943bc43ae9427a7d8a,
+        type: 3}
     - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
         type: 3}
       propertyPath: targetSlots.Array.data[0]
@@ -2417,6 +2463,24 @@ PrefabInstance:
       propertyPath: targetSlots.Array.data[2]
       value: 
       objectReference: {fileID: 1716506880}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: gridExpansion.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6613fb0d4ba0da240b1e0498ef044963,
+        type: 3}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: gridExpansion.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: a2fdca63c4d9cb945b846427aa76094b,
+        type: 3}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: gridExpansion.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: fd13b714b269359439d4cee0e98e0905,
+        type: 3}
     - target: {fileID: 8544863688671686839, guid: 21a26fd4ceffa154f837c490a79bcad1,
         type: 3}
       propertyPath: m_Sprite
