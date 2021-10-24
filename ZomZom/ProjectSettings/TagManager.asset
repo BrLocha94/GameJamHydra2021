@@ -38,9 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: 2D Background
+    uniqueID: 3865043933
+    locked: 0
   - name: 2D
     uniqueID: 109333331
     locked: 0
-  - name: Default
-    uniqueID: 0
+  - name: 2D Foreground
+    uniqueID: 3870991695
     locked: 0
