@@ -14,7 +14,7 @@ public class Denomination : MonoBehaviour
 
     private void Start()
     {
-        UpdateOutputText();
+        UpdateDenomination(0);
     }
 
     public int GetCurrentDenomination() => allowedDenominations[index];
@@ -28,6 +28,7 @@ public class Denomination : MonoBehaviour
         else if (index >= allowedDenominations.Length)
             index = 0;
 
+        BalanceManager.UpdateDenomination(allowedDenominations[index]);
         UpdateOutputText();
     }
 

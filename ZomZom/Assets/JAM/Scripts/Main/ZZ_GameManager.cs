@@ -18,9 +18,9 @@ public class ZZ_GameManager : MonoBehaviour
 
     private void Start()
     {
+        BalanceManager.AddBalance(50000);
         bonusWheelController.OnWheelsEndedEvent += BonusWheelController_OnWheelsEndedEvent;
     }
-
 
     private void BonusWheelController_OnWheelsEndedEvent()
     {
@@ -60,6 +60,8 @@ public class ZZ_GameManager : MonoBehaviour
     {
         if (stateMachine.currentState() == GameStates.Waiting)
         {
+            if (!BalanceManager.ExecutePlay()) return;
+
             gridController.reels[0].Offset = 0;
             gridController.reels[1].Offset = 0;
             gridController.reels[2].Offset = 0;

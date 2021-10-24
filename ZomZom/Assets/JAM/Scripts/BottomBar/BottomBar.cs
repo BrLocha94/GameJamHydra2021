@@ -21,7 +21,20 @@ public class BottomBar : MonoBehaviour
 
     private void Awake()
     {
-        // PlayerMoney.instance.setListener(OnBalanceChange);
+        OnWinChange(0);
+        OnBalanceChange(0);
+    }
+
+    private void OnEnable()
+    {
+        BalanceManager.onBalanceChange += OnBalanceChange;
+        BalanceManager.onWinChange += OnWinChange;
+    }
+
+    private void OnDisable()
+    {
+        BalanceManager.onBalanceChange -= OnBalanceChange;
+        BalanceManager.onWinChange -= OnWinChange;
     }
 
     private void Update()
@@ -34,8 +47,13 @@ public class BottomBar : MonoBehaviour
             animator.Play("out");
     }
 
-    private void OnBalanceChange(int previous, int balance)
+    private void OnWinChange(int newWin)
     {
-        // cashText.text = PlayerMoney.format(balance);
+        winText.text = newWin.FormatStringCashNoCents();
+    }
+
+    private void OnBalanceChange(int newBalance)
+    {
+        cashText.text = newBalance.FormatStringCashNoCents();
     }
 }
