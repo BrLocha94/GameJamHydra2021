@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3644,46 +3644,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5624858292028757043, guid: dd89cd84a38161547b6cae8784e51290,
-        type: 3}
-      propertyPath: forceInitialState
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5624858292028757043, guid: dd89cd84a38161547b6cae8784e51290,
-        type: 3}
-      propertyPath: stateMachine.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5624858292028757043, guid: dd89cd84a38161547b6cae8784e51290,
-        type: 3}
-      propertyPath: stateMachine.Array.data[3].state
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5624858292028757043, guid: dd89cd84a38161547b6cae8784e51290,
-        type: 3}
-      propertyPath: stateMachine.Array.data[2].allowedTransitions.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5624858292028757043, guid: dd89cd84a38161547b6cae8784e51290,
-        type: 3}
-      propertyPath: stateMachine.Array.data[3].allowedTransitions.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5624858292028757043, guid: dd89cd84a38161547b6cae8784e51290,
-        type: 3}
-      propertyPath: stateMachine.Array.data[2].allowedTransitions.Array.data[1]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5624858292028757043, guid: dd89cd84a38161547b6cae8784e51290,
-        type: 3}
-      propertyPath: stateMachine.Array.data[3].allowedTransitions.Array.data[0]
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5624858292028757043, guid: dd89cd84a38161547b6cae8784e51290,
-        type: 3}
-      propertyPath: stateMachine.Array.data[3].allowedTransitions.Array.data[1]
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd89cd84a38161547b6cae8784e51290, type: 3}
 --- !u!1 &1236468805
@@ -6801,5 +6761,40 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasMain
       objectReference: {fileID: 0}
+    - target: {fileID: 8771421220129154964, guid: d9cfab5e83fab6d4a90cd935690fa672,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -153.99997
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771421220129154965, guid: d9cfab5e83fab6d4a90cd935690fa672,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 8350557996584868352}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9cfab5e83fab6d4a90cd935690fa672, type: 3}
+--- !u!1 &8350557996584868351 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8771421220129154967, guid: d9cfab5e83fab6d4a90cd935690fa672,
+    type: 3}
+  m_PrefabInstance: {fileID: 8350557996584868350}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8350557996584868352
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8350557996584868351}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d73c832385b2257408f2996b3d087650, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
