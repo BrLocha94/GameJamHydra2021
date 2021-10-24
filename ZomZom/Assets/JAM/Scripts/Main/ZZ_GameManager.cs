@@ -12,21 +12,13 @@ public class ZZ_GameManager : MonoBehaviour
 
     GameStateMachine stateMachine => GameStateMachine.Instance;
 
-    private PlayManager.Ticket currentTicket = null;
     private bool isBonus;
     private GridPlaySetup playSetup;
     private int playTurn = 0;
 
-    private void Awake()
-    {
-        PlayManager.instance.initialize("math");
-    }
-
     private void Start()
     {
-        PlayerMoney.instance.addToBalance(50000);
         bonusWheelController.OnWheelsEndedEvent += BonusWheelController_OnWheelsEndedEvent;
-       // BonusWheelController_OnWheelsEndedEvent();
     }
 
 
@@ -68,9 +60,6 @@ public class ZZ_GameManager : MonoBehaviour
     {
         if (stateMachine.currentState() == GameStates.Waiting)
         {
-            currentTicket = PlayManager.instance.play(0.5);
-            Debug.Log("Play ticket: " + currentTicket);
-
             gridController.reels[0].Offset = 0;
             gridController.reels[1].Offset = 0;
             gridController.reels[2].Offset = 0;

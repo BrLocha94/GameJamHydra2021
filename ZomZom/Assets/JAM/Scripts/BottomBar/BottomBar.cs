@@ -21,7 +21,7 @@ public class BottomBar : MonoBehaviour
 
     private void Awake()
     {
-        PlayerMoney.instance.setListener(OnBalanceChange);
+        // PlayerMoney.instance.setListener(OnBalanceChange);
     }
 
     private void Update()
@@ -36,6 +36,6 @@ public class BottomBar : MonoBehaviour
 
     private void OnBalanceChange(int previous, int balance)
     {
-        cashText.text = PlayerMoney.format(balance);
+        // cashText.text = PlayerMoney.format(balance);
     }
 }
