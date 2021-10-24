@@ -9,15 +9,20 @@ public class ZZ_GameManager : MonoBehaviour
     [SerializeField] private DirectorPlayer gridPlayer;
     [SerializeField] private ZZ_Grid_Controller gridController;
 
+    GameStateMachine stateMachine => GameStateMachine.Instance;
+
     private bool isBonus;
 
     private void Awake()
     {
-        
+        PlayManager.instance.initialize("math");
     }
 
-    GameStateMachine stateMachine=> GameStateMachine.Instance;
-        
+    private void Start()
+    {
+        PlayerMoney.instance.addToBalance(50000);
+    }
+
     public void OnRevealOutFinished()
     {
         Debug.Log("OnRevealOutFinished");
@@ -31,6 +36,7 @@ public class ZZ_GameManager : MonoBehaviour
             bonusWheelController.Begin();
         }
     }
+
     public void Play()
     {
         if(stateMachine.currentState() == GameStates.Waiting)
