@@ -5,7 +5,7 @@ using UnityEngine;
 public class ZZ_Grid_Reel : TweenableBase<float>
 {
     [SerializeField] private Material material;
-    [SerializeField] private List<ZZ_Grid_Slot> slots = new List<ZZ_Grid_Slot>();
+    [SerializeField] public List<ZZ_Grid_Slot> slots = new List<ZZ_Grid_Slot>();
     [SerializeField] private SO_FloatStartEndData fromToReelAnimation;
     private int offsetParameter = Shader.PropertyToID("_SlotOffset");
     public float Offset

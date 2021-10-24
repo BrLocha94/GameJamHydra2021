@@ -29,6 +29,7 @@ public class ZZ_GameManager : MonoBehaviour
 
     IEnumerator FireLinkRoutine()
     {
+        bonusWheelController.RevertChangedSprites();
         GameStateMachine.Instance.ChangeState(GameStates.Bonus);
         yield return fireLinkController.StartFireLink();
         gridPlayer.Play("FireLinkOut", wrapMode: UnityEngine.Playables.DirectorWrapMode.None, OnEnd: () => 
@@ -41,13 +42,14 @@ public class ZZ_GameManager : MonoBehaviour
     public void OnRevealOutFinished()
     {
         Debug.Log("OnRevealOutFinished");
-        isBonus = true;
+
+        isBonus = false;
 
         if (isBonus)
         {
             gridPlayer.Play("BonusComemoration", wrapMode: UnityEngine.Playables.DirectorWrapMode.Hold, OnEnd: () =>
             {
-                 bonusWheelController.Begin(/*SymbolTranslate.TranslateToSymbol(currentTicket.symbols)*/ new List<ESymbol>(){ ESymbol.Bonus, ESymbol.Bonus, ESymbol.Bonus}, playSetup.fromToReelAnimation);
+                 bonusWheelController.Begin(playSetup.fromToReelAnimation);
             });
         }
         else
@@ -95,7 +97,7 @@ public class ZZ_GameManager : MonoBehaviour
                     {
                        (GetRandomSymbol(), index1),
                        (GetRandomSymbol(), index2),
-                       (GetRandomSymbol(), 2)
+                       (GetRandomSymbol(), index3)
                     },
                     new List<(ESymbol symbol, int index)>()
                     {

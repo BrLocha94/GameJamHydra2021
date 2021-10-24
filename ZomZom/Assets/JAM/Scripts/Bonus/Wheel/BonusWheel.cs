@@ -7,7 +7,7 @@ using UnityEngine.Playables;
 public class BonusWheel : MonoBehaviour
 {
     [SerializeField] SO_FloatStartEndData rotationOffset;
-
+    
     private PlayableDirector m_PlayableDirector;
 
     private bool loop = true;
@@ -29,10 +29,15 @@ public class BonusWheel : MonoBehaviour
 
     public void Begin(float endOffset)
     {
-        rotationOffset.start = endOffset;
         loop = true;
         m_PlayableDirector.time = 0;
         m_PlayableDirector.Play();
+        StartCoroutine(delay(endOffset));
+    }
+    IEnumerator delay(float endOffset)
+    {
+        yield return new WaitForSeconds(1f);
+        rotationOffset.start = endOffset;
     }
 
     public void Stop()

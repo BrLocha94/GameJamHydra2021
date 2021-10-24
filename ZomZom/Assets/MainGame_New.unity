@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2291,9 +2291,54 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
         type: 3}
+      propertyPath: moneyAmount.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
       propertyPath: targetSlots.Array.size
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: targetSymbol.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: gridExpansion.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: moneyAmount.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: e38cd7ec22012694ea944385e66784ce,
+        type: 3}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: moneyAmount.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ce323de0386b9d419627bc81f3a82b2,
+        type: 3}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: moneyAmount.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 84a30ccaac8352b489854580750a37e9,
+        type: 3}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: moneyAmount.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: a3117710c0926654da8bd468959e5ebc,
+        type: 3}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: moneyAmount.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 3259b4eb5e30f334e8370e2514b20dc7,
+        type: 3}
     - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
         type: 3}
       propertyPath: targetSlots.Array.data[0]
@@ -2309,6 +2354,60 @@ PrefabInstance:
       propertyPath: targetSlots.Array.data[2]
       value: 
       objectReference: {fileID: 1716506880}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: targetSymbol.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 0a7151eb0ac5b9f46845c967657495b8,
+        type: 3}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: targetSymbol.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 194357d6c477eb64bbb2a8d18018cdda,
+        type: 3}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: targetSymbol.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 713378fc907ff7041a5e3e2b72b51dfe,
+        type: 3}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: targetSymbol.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: b8a379625aa830e4592c7932afca7334,
+        type: 3}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: targetSymbol.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 9437459bcaa0e2e43820efe2aad02147,
+        type: 3}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: targetSymbol.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 218e710dfdc13d14c8f27805682c1df9,
+        type: 3}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: gridExpansion.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6613fb0d4ba0da240b1e0498ef044963,
+        type: 3}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: gridExpansion.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: a2fdca63c4d9cb945b846427aa76094b,
+        type: 3}
+    - target: {fileID: 8544863688486891774, guid: 21a26fd4ceffa154f837c490a79bcad1,
+        type: 3}
+      propertyPath: gridExpansion.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: fd13b714b269359439d4cee0e98e0905,
+        type: 3}
     - target: {fileID: 8544863688671686839, guid: 21a26fd4ceffa154f837c490a79bcad1,
         type: 3}
       propertyPath: m_Sprite
@@ -7428,7 +7527,7 @@ PrefabInstance:
     - target: {fileID: 8771421220129154964, guid: d9cfab5e83fab6d4a90cd935690fa672,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -153.99997
+      value: -154
       objectReference: {fileID: 0}
     - target: {fileID: 8771421220129154965, guid: d9cfab5e83fab6d4a90cd935690fa672,
         type: 3}
