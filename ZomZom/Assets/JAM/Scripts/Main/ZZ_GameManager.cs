@@ -43,7 +43,7 @@ public class ZZ_GameManager : MonoBehaviour
     {
         Debug.Log("OnRevealOutFinished");
 
-        isBonus = false;
+        isBonus = true;
 
         if (isBonus)
         {
