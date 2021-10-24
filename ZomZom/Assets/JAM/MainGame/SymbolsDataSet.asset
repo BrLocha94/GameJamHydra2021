@@ -26,10 +26,10 @@ MonoBehaviour:
     <Sprite>k__BackingField: {fileID: 21300000, guid: 601f1f6f5bdc5f946b2f3a5cd83f9e86,
       type: 3}
   - <Type>k__BackingField: 5
-    <Sprite>k__BackingField: {fileID: 21300000, guid: 218e710dfdc13d14c8f27805682c1df9,
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 5e03295687c24f14bbe23b7c10eadf5c,
       type: 3}
   - <Type>k__BackingField: 6
-    <Sprite>k__BackingField: {fileID: 21300000, guid: f03becc3df6a9a24ab418bb56b45ae29,
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 0c0e42f8abcd32c4baec0051fcbcf6ad,
       type: 3}
   - <Type>k__BackingField: 0
     <Sprite>k__BackingField: {fileID: 21300000, guid: b29f420ee1e3cab4f8f2e88e9eb8ad77,
