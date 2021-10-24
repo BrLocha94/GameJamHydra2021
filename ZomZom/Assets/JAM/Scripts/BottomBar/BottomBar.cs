@@ -14,7 +14,7 @@ public class BottomBar : MonoBehaviour
     [SerializeField]
     private Text cashText;
 
-    private bool onIdle = false;
+    private bool onIdle = true;
 
     public void EnterIdleAnimationEvent() => onIdle = true;
     public void EnterOutAnimationEvent() => onIdle = false;
@@ -42,7 +42,7 @@ public class BottomBar : MonoBehaviour
         GameStates currentState = GameStateMachine.Instance.currentState();
 
         if (!onIdle && currentState == GameStates.Waiting)
-            animator.Play("idle");
+            animator.Play("in");
         else if (onIdle && currentState == GameStates.Bonus)
             animator.Play("out");
     }
