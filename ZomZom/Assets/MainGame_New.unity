@@ -7140,16 +7140,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7406709545241797916, guid: f80694e907597c44ba511072b7aa36d8,
-        type: 3}
-      propertyPath: orthographic size
-      value: 5.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7406709545241797916, guid: f80694e907597c44ba511072b7aa36d8,
-        type: 3}
-      propertyPath: m_CullingMask.m_Bits
-      value: 33
-      objectReference: {fileID: 0}
     - target: {fileID: 7406709545241797917, guid: f80694e907597c44ba511072b7aa36d8,
         type: 3}
       propertyPath: m_RootOrder
@@ -7210,16 +7200,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3D Camera
       objectReference: {fileID: 0}
-    - target: {fileID: 7406709545241797985, guid: f80694e907597c44ba511072b7aa36d8,
-        type: 3}
-      propertyPath: m_CameraType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7406709545241797985, guid: f80694e907597c44ba511072b7aa36d8,
-        type: 3}
-      propertyPath: m_RenderShadows
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f80694e907597c44ba511072b7aa36d8, type: 3}
 --- !u!1001 &8350557996584868350
@@ -7229,6 +7209,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 891926684, guid: d9cfab5e83fab6d4a90cd935690fa672, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1538931677, guid: d9cfab5e83fab6d4a90cd935690fa672, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056306103, guid: d9cfab5e83fab6d4a90cd935690fa672, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8350557995713506491, guid: d9cfab5e83fab6d4a90cd935690fa672,
         type: 3}
       propertyPath: customStateCallbacks.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -7428,7 +7420,7 @@ PrefabInstance:
     - target: {fileID: 8771421220129154964, guid: d9cfab5e83fab6d4a90cd935690fa672,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -153.99997
+      value: -154
       objectReference: {fileID: 0}
     - target: {fileID: 8771421220129154965, guid: d9cfab5e83fab6d4a90cd935690fa672,
         type: 3}
