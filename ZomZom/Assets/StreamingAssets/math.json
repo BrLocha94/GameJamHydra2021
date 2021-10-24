@@ -1,7 +1,7 @@
 {
 	"wager":100,
 
-	"symbols": ["p1","p2","p3","p4","p5"],
+	"symbols": ["p1","p2","p3","p4","p5","p6","bonus"],
 	
 	"prizes": [
 		{ "chance": 0.25, "value": 100, "symbols": ["p1","p1","p1"] },

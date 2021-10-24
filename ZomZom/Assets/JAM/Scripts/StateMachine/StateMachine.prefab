@@ -50,4 +50,6 @@ MonoBehaviour:
   - state: 2
     allowedTransitions: 03000000
   - state: 3
+    allowedTransitions: 0200000004000000
+  - state: 4
     allowedTransitions: 02000000

@@ -37,6 +37,7 @@ public class ZZ_GameManager : MonoBehaviour
 
     IEnumerator FireLinkRoutine()
     {
+        GameStateMachine.Instance.ChangeState(GameStates.Bonus);
         yield return fireLinkController.StartFireLink();
         gridPlayer.Play("FireLinkOut", wrapMode: UnityEngine.Playables.DirectorWrapMode.None, OnEnd: () => 
         {
