@@ -13,3 +13,5 @@ public class ZZ_Grid_Slot : MonoBehaviour
         symbol.SetSprite(symbolData.Sprite);
     }
 }
+
+

@@ -26,7 +26,9 @@ public class ZZ_GameManager : MonoBehaviour
     {
         PlayerMoney.instance.addToBalance(50000);
         bonusWheelController.OnWheelsEndedEvent += BonusWheelController_OnWheelsEndedEvent;
+       // BonusWheelController_OnWheelsEndedEvent();
     }
+
 
     private void BonusWheelController_OnWheelsEndedEvent()
     {
@@ -36,7 +38,11 @@ public class ZZ_GameManager : MonoBehaviour
     IEnumerator FireLinkRoutine()
     {
         yield return fireLinkController.StartFireLink();
-        gridPlayer.Play("FireLinkOut", wrapMode: UnityEngine.Playables.DirectorWrapMode.None, OnEnd: () => stateMachine.ChangeState(GameStates.Waiting));
+        gridPlayer.Play("FireLinkOut", wrapMode: UnityEngine.Playables.DirectorWrapMode.None, OnEnd: () => 
+        {
+            stateMachine.ChangeState(GameStates.Waiting);
+           // BonusWheelController_OnWheelsEndedEvent();
+        });
     }
 
     public void OnRevealOutFinished()
