@@ -5,30 +5,28 @@ using UnityEngine.Events;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Button))]
-public class UIButton : UiButtonBase
+public class UIButton : MonoBehaviour
 {
     [SerializeField]
-    private UnityEvent onClickCallback;
-    [Space]
+    private float delay = 0f;
     [SerializeField]
     private List<GameStates> allowedGameStates = new List<GameStates>();
+    [Space]
+    [SerializeField]
+    private UnityEvent onClickCallback;
 
-    public override void OnClick()
+    public void OnClick()
     {
-        if (!canExecuteCall) return;
-
         GameStates currentState = GameStateMachine.Instance.currentState();
 
         if (allowedGameStates.Contains(currentState))
         {
-            canExecuteCall = false;
-            Invoke(nameof(OnCLickDelayedCall), delay);
+            Invoke(nameof(DelayedCall), delay);
         }
     }
 
-    protected override void OnCLickDelayedCall()
+    private void DelayedCall()
     {
-        base.OnCLickDelayedCall();
         onClickCallback?.Invoke();
     }
 }
