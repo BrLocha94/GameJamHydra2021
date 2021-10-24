@@ -10,14 +10,14 @@ public class BonusWheelController : MonoBehaviour
     private int currentWheel = 0;
     private bool stopping = false;
 
-    public void Begin()
+    public void Begin(List<ESymbol> symbolsList)
     {
         currentWheel = 0;
         stopping = false;
 
         for (int i = 0; i < bonusWheels.Length; i++)
         {
-           bonusWheels[i].Begin(0);
+           bonusWheels[i].Begin((int)symbolsList[i]);
         }
     }
 
