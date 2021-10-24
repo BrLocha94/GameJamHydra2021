@@ -58,5 +58,6 @@ public enum ESymbol : int
     P3 = 3,
     P4 = 4,
     P5 = 5,
-    P6 = 6
+    P6 = 6,
+    Null = -1
 }

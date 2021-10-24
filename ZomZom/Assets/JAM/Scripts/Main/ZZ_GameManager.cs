@@ -43,6 +43,9 @@ public class ZZ_GameManager : MonoBehaviour
     {
         if(stateMachine.currentState() == GameStates.Waiting)
         {
+            PlayManager.Ticket play = PlayManager.instance.play(0.5);
+            Debug.Log("Play ticket: " + play);
+
             GridPlaySetup nextPlaySetup = new GridPlaySetup() 
             {
                  reelsEntrys = new List<List<(ESymbol symbol, int index)>>()
@@ -66,12 +69,12 @@ public class ZZ_GameManager : MonoBehaviour
                        (ESymbol.P6, 5)
                     }
                  },
-                  fromToReelAnimation = new List<Vector2>()
-                  {
-                      new Vector2(gridController.reels[0].Offset,gridController.reels[0].Offset+3),
-                      new Vector2(gridController.reels[1].Offset,gridController.reels[1].Offset+3),
-                      new Vector2(gridController.reels[2].Offset,gridController.reels[2].Offset+3),
-                  }
+                 fromToReelAnimation = new List<Vector2>()
+                 {
+                     new Vector2(gridController.reels[0].Offset,gridController.reels[0].Offset+3),
+                     new Vector2(gridController.reels[1].Offset,gridController.reels[1].Offset+3),
+                     new Vector2(gridController.reels[2].Offset,gridController.reels[2].Offset+3),
+                 }
             };
 
 
