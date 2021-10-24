@@ -25,6 +25,7 @@ public class PlayManager
         currentMath = Math.Load(Application.streamingAssetsPath + "/" + mathName + ".json");
         createIndexSearch();
         Debug.Log("Playmanager initialized");
+        GameStateMachine.Instance.ChangeState(GameStates.Waiting);
     }
 
     private void createIndexSearch()
