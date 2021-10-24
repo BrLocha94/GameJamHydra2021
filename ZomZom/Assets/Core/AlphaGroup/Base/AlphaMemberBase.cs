@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System;
+using System.Collections.Generic;
 
 [ExecuteInEditMode]
-public abstract class AlphaMemberBase<T> : MonoBehaviour
+public abstract class AlphaMemberBase<T> : TweenableBase<float>
 {
     private const int maxUpwardsParentSearchCount = 12;
     private Transform m_Parent;
@@ -12,6 +13,8 @@ public abstract class AlphaMemberBase<T> : MonoBehaviour
     public event Action<float> OnAlphaChanged;
 
     public bool forceUpdateMemberParent = true;
+
+    public bool HasParent=>nearParent!=null;
 
     /// <summary>
     /// Alpha parameter driven by the group alpha
@@ -25,7 +28,7 @@ public abstract class AlphaMemberBase<T> : MonoBehaviour
             OnAlphaChange();
         }
     }
-    protected virtual void OnAlphaChange()
+    public virtual void OnAlphaChange()
     {
         OnAlphaChanged?.Invoke(CalculatedAlpha());
     }
@@ -114,5 +117,27 @@ public abstract class AlphaMemberBase<T> : MonoBehaviour
                 break;
             }
         }
+    }
+
+    public override Dictionary<int, string> TweenableMembers {get;} = new Dictionary<int, string>() 
+    {
+        {0, "Member Alpha"}
+    };
+    
+    public override void SetTweenableValue(int index, float value)
+    {
+        if(index == 0)
+        {
+            memberAlpha = value;
+        }
+    }
+    public override float GetTweenableValue(int index)
+    {
+        if(index == 0)
+        {
+            return memberAlpha;
+        }
+
+        return 0;
     }
 }

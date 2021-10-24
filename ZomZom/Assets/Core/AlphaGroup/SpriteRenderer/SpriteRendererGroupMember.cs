@@ -51,7 +51,7 @@ public class SpriteRendererGroupMember : AlphaMemberBase<SpriteRenderer>
         }
     }
 
-    protected override void OnAlphaChange()
+    public override void OnAlphaChange()
     {
         if (m_SpriteRenderer == null) { m_SpriteRenderer = GetComponent<SpriteRenderer>(); }
         float finalAlpha = m_MemberColor.a * CalculatedAlpha();

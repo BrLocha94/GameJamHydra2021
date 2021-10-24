@@ -11,7 +11,7 @@ public class ZZ_Grid_Reel : TweenableBase<float>
     public float Offset
     {
         get => material.GetVector(offsetParameter).y;
-        set => material.SetVector(offsetParameter, new Vector4(0, value, 0, 0));
+        set => material.SetVector(offsetParameter, new Vector4(0, Mathf.Repeat(value,6), 0, 0));
     }
     public override Dictionary<int, string> TweenableMembers { get; } = new Dictionary<int, string>
     {
@@ -36,6 +36,11 @@ public class ZZ_Grid_Reel : TweenableBase<float>
     {
         fromToReelAnimation.start = fromTo.x;
         fromToReelAnimation.end = fromTo.y;
+    }
+    public void ResetFromToAnimation()
+    {
+        fromToReelAnimation.start = 0;
+        fromToReelAnimation.end = 3;
     }
     public void SetSymbol(SymbolData symbolData, int slotIndex)
     {

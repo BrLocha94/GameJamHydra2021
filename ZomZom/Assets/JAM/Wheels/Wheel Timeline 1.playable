@@ -810,7 +810,7 @@ MonoBehaviour:
       m_AnimationCurves: {fileID: 0}
       m_Recordable: 0
       m_PostExtrapolationMode: 1
-      m_PreExtrapolationMode: 0
+      m_PreExtrapolationMode: 1
       m_PostExtrapolationTime: Infinity
       m_PreExtrapolationTime: 3.783333333333333
       m_DisplayName: FloatTweenClip
@@ -1249,9 +1249,9 @@ MonoBehaviour:
           multiplier: 1
       m_DisabledValue: 0
       m_Start: 0
-      m_End: 48
-      m_StarEndData: {fileID: 0}
-      m_FromAsset: 0
+      m_End: 42
+      m_StarEndData: {fileID: 11400000, guid: 14264b808ed93c249ac0e8994b21f2cc, type: 2}
+      m_FromAsset: 1
 --- !u!114 &-905457366129174026
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1608,7 +1608,7 @@ MonoBehaviour:
     m_AnimationCurves: {fileID: 0}
     m_Recordable: 0
     m_PostExtrapolationMode: 1
-    m_PreExtrapolationMode: 0
+    m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: Infinity
     m_PreExtrapolationTime: 3.783333333333333
     m_DisplayName: FloatTweenClip
@@ -1859,8 +1859,8 @@ MonoBehaviour:
       m_DisabledValue: 0
       m_Start: 0
       m_End: 48
-      m_StarEndData: {fileID: 0}
-      m_FromAsset: 0
+      m_StarEndData: {fileID: 11400000, guid: 14264b808ed93c249ac0e8994b21f2cc, type: 2}
+      m_FromAsset: 1
 --- !u!114 &6965472774785455116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2125,5 +2125,5 @@ MonoBehaviour:
       m_DisabledValue: 0
       m_Start: 0
       m_End: 48
-      m_StarEndData: {fileID: 0}
-      m_FromAsset: 0
+      m_StarEndData: {fileID: 11400000, guid: 14264b808ed93c249ac0e8994b21f2cc, type: 2}
+      m_FromAsset: 1

@@ -38,4 +38,13 @@ public class ZZ_Grid_Controller : MonoBehaviour
             reel.SetFromToAnimation(setup.fromToReelAnimation[i]);
         }
     }
+
+    public void ResetFromToReelsOffset()
+    {
+        for (int i = 0; i < reels.Count; i++)
+        {
+            ZZ_Grid_Reel reel = reels[i];
+            reel.ResetFromToAnimation();
+        }
+    }
 }

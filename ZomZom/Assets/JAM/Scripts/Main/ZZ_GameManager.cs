@@ -8,11 +8,14 @@ public class ZZ_GameManager : MonoBehaviour
     [SerializeField] private BonusWheelController bonusWheelController;
     [SerializeField] private DirectorPlayer gridPlayer;
     [SerializeField] private ZZ_Grid_Controller gridController;
+    [SerializeField] private ZZ_FireLinkController fireLinkController;
 
     GameStateMachine stateMachine => GameStateMachine.Instance;
 
     private PlayManager.Ticket currentTicket = null;
     private bool isBonus;
+    private GridPlaySetup playSetup;
+    private int playTurn = 0;
 
     private void Awake()
     {
@@ -22,6 +25,18 @@ public class ZZ_GameManager : MonoBehaviour
     private void Start()
     {
         PlayerMoney.instance.addToBalance(50000);
+        bonusWheelController.OnWheelsEndedEvent += BonusWheelController_OnWheelsEndedEvent;
+    }
+
+    private void BonusWheelController_OnWheelsEndedEvent()
+    {
+        gridPlayer.Play("FireLinkIn", wrapMode: UnityEngine.Playables.DirectorWrapMode.Hold, OnEnd: () => StartCoroutine(FireLinkRoutine()));
+    }
+
+    IEnumerator FireLinkRoutine()
+    {
+        yield return fireLinkController.StartFireLink();
+        gridPlayer.Play("FireLinkOut", wrapMode: UnityEngine.Playables.DirectorWrapMode.None, OnEnd: () => stateMachine.ChangeState(GameStates.Waiting));
     }
 
     public void OnRevealOutFinished()
@@ -31,25 +46,39 @@ public class ZZ_GameManager : MonoBehaviour
 
         isBonus = true;
 
-        if(isBonus)
+        if (isBonus)
         {
-            gridPlayer.Play("BonusComemoration", wrapMode: UnityEngine.Playables.DirectorWrapMode.Hold, OnEnd:()=>
-            {
-                 bonusWheelController.Begin(SymbolTranslate.TranslateToSymbol(currentTicket.symbols));
-            });
+            gridPlayer.Play("BonusComemoration", wrapMode: UnityEngine.Playables.DirectorWrapMode.Hold, OnEnd: () =>
+             {
+                 bonusWheelController.Begin(/*SymbolTranslate.TranslateToSymbol(currentTicket.symbols)*/ new List<ESymbol>(){ ESymbol.Bonus, ESymbol.Bonus, ESymbol.Bonus}, playSetup.fromToReelAnimation);
+             });
+        }
+        else
+        {
+            stateMachine.ChangeState(GameStates.Waiting);
         }
     }
 
     public void Play()
     {
-        if(stateMachine.currentState() == GameStates.Waiting)
+        if (stateMachine.currentState() == GameStates.Waiting)
         {
             currentTicket = PlayManager.instance.play(0.5);
             Debug.Log("Play ticket: " + currentTicket);
 
-            GridPlaySetup nextPlaySetup = CreateGridPlaySetup();
 
-            gridController.PrepareNextPlay(nextPlaySetup);
+            gridController.reels[0].Offset = 0;
+            gridController.reels[1].Offset = 0;
+            gridController.reels[2].Offset = 0;
+            gridController.ResetFromToReelsOffset();
+
+
+            playSetup = CreateGridPlaySetup();
+
+            if (playTurn == 0) playTurn = 1;
+            else playTurn = 0;
+
+            gridController.PrepareNextPlay(playSetup);
             gridPlayer.Play("SymbolsIn", wrapMode: UnityEngine.Playables.DirectorWrapMode.Hold);
             stateMachine.ChangeState(GameStates.RollingReel);
         }
@@ -57,27 +86,32 @@ public class ZZ_GameManager : MonoBehaviour
 
     private GridPlaySetup CreateGridPlaySetup()
     {
+        int add = playTurn == 0 ? 3 : 0;
+        int index1 = 0 + add;
+        int index2 = 1 + add;
+        int index3 = 2 + add;
+
         GridPlaySetup nextPlaySetup = new GridPlaySetup()
         {
             reelsEntrys = new List<List<(ESymbol symbol, int index)>>()
                  {
                     new List<(ESymbol symbol, int index)>()
                     {
-                       (ESymbol.P1, 3),
-                       (ESymbol.P2, 4),
-                       (ESymbol.Bonus, 5)
+                       (GetRandomSymbol(), index1),
+                       (GetRandomSymbol(), index2),
+                       (GetRandomSymbol(), 2)
                     },
                     new List<(ESymbol symbol, int index)>()
                     {
-                       (ESymbol.P5, 3),
-                       (ESymbol.Bonus, 4),
-                       (ESymbol.P5, 5)
+                       (GetRandomSymbol(), index1),
+                       (GetRandomSymbol(), index2),
+                       (GetRandomSymbol(), index3)
                     },
                     new List<(ESymbol symbol, int index)>()
                     {
-                       (ESymbol.Bonus, 3),
-                       (ESymbol.P3, 4),
-                       (ESymbol.P6, 5)
+                       (GetRandomSymbol(), index1),
+                       (GetRandomSymbol(), index2),
+                       (GetRandomSymbol(), index3)
                     }
                  },
             fromToReelAnimation = new List<Vector2>()
@@ -89,6 +123,11 @@ public class ZZ_GameManager : MonoBehaviour
         };
 
         return nextPlaySetup;
+    }
+
+    private ESymbol GetRandomSymbol()
+    {
+        return (ESymbol)Random.Range(0, 6);
     }
 }
 
