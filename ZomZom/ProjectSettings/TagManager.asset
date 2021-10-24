@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: 2D
+    uniqueID: 109333331
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

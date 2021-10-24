@@ -1,0 +1,90 @@
+
+zombie_fat.png
+size: 1315,396
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Leg2
+  rotate: false
+  xy: 926, 20
+  size: 119, 153
+  orig: 119, 153
+  offset: 0, 0
+  index: -1
+arm1
+  rotate: true
+  xy: 2, 2
+  size: 392, 187
+  orig: 392, 187
+  offset: 0, 0
+  index: -1
+arm2
+  rotate: true
+  xy: 191, 2
+  size: 392, 187
+  orig: 392, 187
+  offset: 0, 0
+  index: -1
+eyeL
+  rotate: false
+  xy: 380, 8
+  size: 7, 7
+  orig: 9, 9
+  offset: 1, 1
+  index: -1
+eyeR
+  rotate: false
+  xy: 380, 17
+  size: 6, 8
+  orig: 8, 10
+  offset: 1, 1
+  index: -1
+foot1
+  rotate: true
+  xy: 1189, 35
+  size: 138, 61
+  orig: 138, 61
+  offset: 0, 0
+  index: -1
+foot2
+  rotate: true
+  xy: 1252, 122
+  size: 138, 61
+  orig: 138, 61
+  offset: 0, 0
+  index: -1
+hair
+  rotate: true
+  xy: 1216, 262
+  size: 132, 91
+  orig: 132, 91
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 1047, 31
+  size: 140, 142
+  orig: 140, 142
+  offset: 0, 0
+  index: -1
+leg1
+  rotate: false
+  xy: 926, 175
+  size: 288, 219
+  orig: 288, 221
+  offset: 0, 0
+  index: -1
+shirt
+  rotate: false
+  xy: 380, 27
+  size: 197, 367
+  orig: 197, 367
+  offset: 0, 0
+  index: -1
+shirt2
+  rotate: false
+  xy: 579, 38
+  size: 345, 356
+  orig: 345, 356
+  offset: 0, 0
+  index: -1
