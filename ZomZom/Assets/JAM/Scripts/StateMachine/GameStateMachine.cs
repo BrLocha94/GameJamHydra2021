@@ -62,4 +62,5 @@ public enum GameStates
     Initializing,
     Waiting,
     RollingReel,
+    Bonus
 }

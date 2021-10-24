@@ -42,16 +42,14 @@ public class ZZ_GameManager : MonoBehaviour
     public void OnRevealOutFinished()
     {
         Debug.Log("OnRevealOutFinished");
-        stateMachine.ChangeState(GameStates.RollingReel);
-
         isBonus = true;
 
         if (isBonus)
         {
             gridPlayer.Play("BonusComemoration", wrapMode: UnityEngine.Playables.DirectorWrapMode.Hold, OnEnd: () =>
-             {
+            {
                  bonusWheelController.Begin(/*SymbolTranslate.TranslateToSymbol(currentTicket.symbols)*/ new List<ESymbol>(){ ESymbol.Bonus, ESymbol.Bonus, ESymbol.Bonus}, playSetup.fromToReelAnimation);
-             });
+            });
         }
         else
         {
@@ -66,17 +64,17 @@ public class ZZ_GameManager : MonoBehaviour
             currentTicket = PlayManager.instance.play(0.5);
             Debug.Log("Play ticket: " + currentTicket);
 
-
             gridController.reels[0].Offset = 0;
             gridController.reels[1].Offset = 0;
             gridController.reels[2].Offset = 0;
             gridController.ResetFromToReelsOffset();
 
-
             playSetup = CreateGridPlaySetup();
 
-            if (playTurn == 0) playTurn = 1;
-            else playTurn = 0;
+            if (playTurn == 0)
+                playTurn = 1;
+            else
+                playTurn = 0;
 
             gridController.PrepareNextPlay(playSetup);
             gridPlayer.Play("SymbolsIn", wrapMode: UnityEngine.Playables.DirectorWrapMode.Hold);
