@@ -7217,6 +7217,14 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1538931681, guid: d9cfab5e83fab6d4a90cd935690fa672, type: 3}
+      propertyPath: customStateCallbacks.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 784697954}
+    - target: {fileID: 1538931681, guid: d9cfab5e83fab6d4a90cd935690fa672, type: 3}
+      propertyPath: customStateCallbacks.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPressToStop
+      objectReference: {fileID: 0}
     - target: {fileID: 2056306103, guid: d9cfab5e83fab6d4a90cd935690fa672, type: 3}
       propertyPath: m_RootOrder
       value: 2
