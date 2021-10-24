@@ -430,8 +430,8 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: c1fed92978749774baae079511a13892, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
+  m_InitialState: 0
+  m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
@@ -705,9 +705,9 @@ PlayableDirector:
   m_GameObject: {fileID: 149075258}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: c1fed92978749774baae079511a13892, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
+  m_PlayableAsset: {fileID: 11400000, guid: 1e9512c0d4e90624fb5adfacbbb62519, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
@@ -717,6 +717,12 @@ PlayableDirector:
     value: {fileID: 1854324878}
   - key: {fileID: -7551490303413112527, guid: c1fed92978749774baae079511a13892, type: 2}
     value: {fileID: 2100000, guid: d521fda9738f19e408f84561475b2fcf, type: 2}
+  - key: {fileID: -6116758522043482025, guid: 1e9512c0d4e90624fb5adfacbbb62519, type: 2}
+    value: {fileID: 1854324878}
+  - key: {fileID: -7551490303413112527, guid: 1e9512c0d4e90624fb5adfacbbb62519, type: 2}
+    value: {fileID: 2100000, guid: d521fda9738f19e408f84561475b2fcf, type: 2}
+  - key: {fileID: 6965472774785455116, guid: 1e9512c0d4e90624fb5adfacbbb62519, type: 2}
+    value: {fileID: 149075260}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &153458224
@@ -1742,9 +1748,9 @@ PlayableDirector:
   m_GameObject: {fileID: 459561337}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: c1fed92978749774baae079511a13892, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
+  m_PlayableAsset: {fileID: 11400000, guid: dcf7b218e00bae24189d62ecea6da987, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
@@ -1754,6 +1760,12 @@ PlayableDirector:
     value: {fileID: 153458227}
   - key: {fileID: -7551490303413112527, guid: c1fed92978749774baae079511a13892, type: 2}
     value: {fileID: 2100000, guid: a638882fe86b31945b21cc98d89fd07d, type: 2}
+  - key: {fileID: -6116758522043482025, guid: dcf7b218e00bae24189d62ecea6da987, type: 2}
+    value: {fileID: 153458227}
+  - key: {fileID: -7551490303413112527, guid: dcf7b218e00bae24189d62ecea6da987, type: 2}
+    value: {fileID: 2100000, guid: a638882fe86b31945b21cc98d89fd07d, type: 2}
+  - key: {fileID: 6965472774785455116, guid: dcf7b218e00bae24189d62ecea6da987, type: 2}
+    value: {fileID: 459561339}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &459561341
@@ -3700,7 +3712,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1453676493}
+      - m_Target: {fileID: 1198115444}
         m_TargetAssemblyTypeName: BonusWheelController, Jam
         m_MethodName: OnPressToStop
         m_Mode: 1
@@ -4210,7 +4222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 268fe36de26457f4ebbef895ee9872a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bonusWheelController: {fileID: 0}
+  bonusWheelController: {fileID: 1198115444}
   gridPlayer: {fileID: 287684901}
   gridController: {fileID: 336712918}
 --- !u!4 &1173290363
@@ -5233,7 +5245,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1453676494}
-  - component: {fileID: 1453676493}
   m_Layer: 0
   m_Name: MainGrid
   m_TagString: Untagged
@@ -5241,19 +5252,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1453676493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1453676492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 078ac653c063f9f43940a4994c623023, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bonusWheels: []
 --- !u!4 &1453676494
 Transform:
   m_ObjectHideFlags: 0
@@ -7111,7 +7109,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1453676493}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BonusWheelController, Jam
         m_MethodName: Begin
         m_Mode: 1
