@@ -5,8 +5,16 @@ using UnityEngine.UI;
 
 public class BottomBar : MonoBehaviour
 {
+    [Header("Animation params")]
     [SerializeField]
     private Animator animator;
+    [SerializeField]
+    private string animNameIdleRollup = "outIdleRollup";
+    [SerializeField]
+    private string animNameRollupFirelink = "outRollupFirelink";
+    [SerializeField]
+    private string animNameFirelinkIdle = "inFirelinkIdle";
+    [Space]
     [SerializeField]
     private Denomination denomination;
     [SerializeField]
@@ -14,10 +22,7 @@ public class BottomBar : MonoBehaviour
     [SerializeField]
     private Text cashText;
 
-    private bool onIdle = true;
-
-    public void EnterIdleAnimationEvent() => onIdle = true;
-    public void EnterOutAnimationEvent() => onIdle = false;
+    private EButtonBarState state = EButtonBarState.Idle;
 
     private void Awake()
     {
@@ -37,14 +42,30 @@ public class BottomBar : MonoBehaviour
         BalanceManager.onWinChange -= OnWinChange;
     }
 
-    private void Update()
+    private void Start()
+    {
+        InvokeRepeating(nameof(CheckAnimationTransitions), 0.5f, 0.5f);
+    }
+
+    private void CheckAnimationTransitions()
     {
         GameStates currentState = GameStateMachine.Instance.currentState();
 
-        if (!onIdle && currentState == GameStates.Waiting)
-            animator.Play("in");
-        else if (onIdle && currentState == GameStates.Bonus)
-            animator.Play("out");
+        if (state == EButtonBarState.Bonus && currentState == GameStates.Waiting)
+        {
+            state = EButtonBarState.Idle;
+            animator.Play(animNameFirelinkIdle);
+        }
+        else if (state == EButtonBarState.Idle && currentState == GameStates.RollingReel)
+        {
+            state = EButtonBarState.Rollup;
+            animator.Play(animNameIdleRollup);
+        }
+        else if (state == EButtonBarState.Rollup && currentState == GameStates.Bonus)
+        {
+            state = EButtonBarState.Bonus;
+            animator.Play(animNameRollupFirelink);
+        }
     }
 
     private void OnWinChange(int newWin)
@@ -56,4 +77,12 @@ public class BottomBar : MonoBehaviour
     {
         cashText.text = newBalance.FormatStringCashNoCents();
     }
+}
+
+public enum EButtonBarState
+{
+    Null,
+    Idle,
+    Rollup,
+    Bonus
 }
