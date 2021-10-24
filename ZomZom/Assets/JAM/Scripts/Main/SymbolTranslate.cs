@@ -9,7 +9,7 @@ public static class SymbolTranslate
         switch (target)
         {
             case "p1":
-                return ESymbol.Bonus;
+                return ESymbol.P1;
             case "p2":
                 return ESymbol.P2;
             case "p3":
@@ -22,5 +22,17 @@ public static class SymbolTranslate
 
         Debug.Log("There is no " + target + " mapped in conversion method");
         return ESymbol.Null;
+    }
+
+    public static List<ESymbol> TranslateToSymbol(string[] target)
+    {
+        List<ESymbol> symbolList = new List<ESymbol>();
+
+        foreach(string targetString in target)
+        {
+            symbolList.Add(TranslateToSymbol(targetString));
+        }
+
+        return symbolList;
     }
 }
