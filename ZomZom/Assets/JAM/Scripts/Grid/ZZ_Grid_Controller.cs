@@ -8,6 +8,14 @@ public class ZZ_Grid_Controller : MonoBehaviour
     public List<ZZ_Grid_Reel> reels = new List<ZZ_Grid_Reel>();
 
     [SerializeField] private SymbolsDataAsset symbolsDataAsset;
+
+    public void Awake()
+    {
+        for (int i = 0; i < reels.Count; i++)
+        {
+            reels[i].Offset = 0;
+        }
+    }
     public void PrepareNextPlay(GridPlaySetup setup)
     {
         for (int reelIndex = 0; reelIndex < setup.reelsEntrys.Count; reelIndex++)

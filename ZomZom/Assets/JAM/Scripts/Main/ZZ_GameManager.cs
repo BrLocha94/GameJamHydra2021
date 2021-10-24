@@ -32,8 +32,10 @@ public class ZZ_GameManager : MonoBehaviour
 
         if(isBonus)
         {
-            gridPlayer.Stop();
-            bonusWheelController.Begin();
+            gridPlayer.Play("BonusComemoration", wrapMode: UnityEngine.Playables.DirectorWrapMode.Hold, OnEnd:()=>
+            {
+                 bonusWheelController.Begin();
+            });
         }
     }
 

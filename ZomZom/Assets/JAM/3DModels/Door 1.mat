@@ -72,7 +72,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 3bff87daa685ad84e9d072a0461317df, type: 3}
+        m_Texture: {fileID: 2800000, guid: baae68ea9e1a7104b93ba80a83804434, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
@@ -216,7 +216,7 @@ Material:
     - _NormalScale: 1
     - _OcclusionStrength: 1
     - _OpaqueCullMode: 2
-    - _Open: 0.039
+    - _Open: 0
     - _Open2: 0.35
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15

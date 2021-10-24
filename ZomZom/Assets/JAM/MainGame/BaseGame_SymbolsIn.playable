@@ -118,7 +118,7 @@ MonoBehaviour:
     m_DisplayName: FloatTweenClip
   m_Markers:
     m_Objects: []
-  postplaybackResetToDefault: 1
+  postplaybackResetToDefault: 0
   mixerDataMode: 0
   subTracks: []
   masterTrack: {fileID: -7726826595642705207}
@@ -1322,7 +1322,7 @@ MonoBehaviour:
     m_DisplayName: FloatTweenClip
   m_Markers:
     m_Objects: []
-  postplaybackResetToDefault: 1
+  postplaybackResetToDefault: 0
   mixerDataMode: 0
   subTracks: []
   masterTrack: {fileID: -3256608312146632271}
@@ -1437,7 +1437,7 @@ MonoBehaviour:
     m_DisplayName: FloatTweenClip
   m_Markers:
     m_Objects: []
-  postplaybackResetToDefault: 1
+  postplaybackResetToDefault: 0
   mixerDataMode: 0
   subTracks: []
   masterTrack: {fileID: -2598752543891963875}
@@ -2223,7 +2223,7 @@ MonoBehaviour:
       m_Start: 1
       m_End: 4
       m_StarEndData: {fileID: 11400000, guid: c31f1241c32ee6048a1ccb5098fdb473, type: 2}
-      m_FromAsset: 1
+      m_FromAsset: 0
 --- !u!114 &3582162351104076474
 MonoBehaviour:
   m_ObjectHideFlags: 1
