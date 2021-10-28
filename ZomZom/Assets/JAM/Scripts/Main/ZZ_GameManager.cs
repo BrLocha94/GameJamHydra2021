@@ -14,7 +14,6 @@ public class ZZ_GameManager : MonoBehaviour
 
     private bool isBonus;
     private GridPlaySetup playSetup;
-    private int playTurn = 0;
 
     private void Start()
     {
@@ -43,13 +42,13 @@ public class ZZ_GameManager : MonoBehaviour
     {
         Debug.Log("OnRevealOutFinished");
 
-        isBonus = true;
+        //isBonus = true;
 
         if (isBonus)
         {
             gridPlayer.Play("BonusComemoration", wrapMode: UnityEngine.Playables.DirectorWrapMode.Hold, OnEnd: () =>
             {
-                 bonusWheelController.Begin(playSetup.fromToReelAnimation);
+                 bonusWheelController.Begin(new List<Vector2>());
             });
         }
         else
@@ -64,60 +63,39 @@ public class ZZ_GameManager : MonoBehaviour
         {
             if (!BalanceManager.ExecutePlay()) return;
 
-            gridController.reels[0].Offset = 0;
-            gridController.reels[1].Offset = 0;
-            gridController.reels[2].Offset = 0;
-            gridController.ResetFromToReelsOffset();
-
             playSetup = CreateGridPlaySetup();
 
-            if (playTurn == 0)
-                playTurn = 1;
-            else
-                playTurn = 0;
-
-            gridController.PrepareNextPlay(playSetup);
-            gridPlayer.Play("SymbolsIn", wrapMode: UnityEngine.Playables.DirectorWrapMode.Hold);
+            gridController.Play(playSetup);
+            
             stateMachine.ChangeState(GameStates.RollingReel);
         }
     }
 
     private GridPlaySetup CreateGridPlaySetup()
     {
-        int add = playTurn == 0 ? 3 : 0;
-        int index1 = 0 + add;
-        int index2 = 1 + add;
-        int index3 = 2 + add;
-
         GridPlaySetup nextPlaySetup = new GridPlaySetup()
         {
-            reelsEntrys = new List<List<(ESymbol symbol, int index)>>()
+            reelsEntrys = new List<List<ESymbol>>()
                  {
-                    new List<(ESymbol symbol, int index)>()
+                   new List<ESymbol>()
                     {
-                       (ESymbol.P3, index1),
-                       (ESymbol.P4, index2),
-                       (ESymbol.Bonus, index3)
+                       GetRandomSymbol(),
+                       GetRandomSymbol(),
+                       GetRandomSymbol(),
                     },
-                    new List<(ESymbol symbol, int index)>()
+                    new List<ESymbol>()
                     {
-                       (ESymbol.Bonus, index1),
-                       (ESymbol.P1, index2),
-                       (ESymbol.P2, index3)
+                       GetRandomSymbol(),
+                       GetRandomSymbol(),
+                       GetRandomSymbol(),
                     },
-                    new List<(ESymbol symbol, int index)>()
+                    new List<ESymbol>()
                     {
-                       (ESymbol.P5, index1),
-                       (ESymbol.Bonus, index2),
-                       (ESymbol.P6, index3)
-                    }
+                       GetRandomSymbol(),
+                       GetRandomSymbol(),
+                       GetRandomSymbol(),
+                    },
                  },
-            fromToReelAnimation = new List<Vector2>()
-                 {
-                     new Vector2(gridController.reels[0].Offset,gridController.reels[0].Offset+3),
-                     new Vector2(gridController.reels[1].Offset,gridController.reels[1].Offset+3),
-                     new Vector2(gridController.reels[2].Offset,gridController.reels[2].Offset+3),
-                 }
         };
 
         return nextPlaySetup;
@@ -131,6 +109,5 @@ public class ZZ_GameManager : MonoBehaviour
 
 public struct GridPlaySetup
 {
-    public List<List<(ESymbol symbol, int index)>> reelsEntrys;
-    public List<Vector2> fromToReelAnimation;
+    public List<List<ESymbol>> reelsEntrys;
 }

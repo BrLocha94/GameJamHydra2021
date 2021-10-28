@@ -8,10 +8,17 @@ public class ZZ_Grid_Reel : TweenableBase<float>
     [SerializeField] public List<ZZ_Grid_Slot> slots = new List<ZZ_Grid_Slot>();
     [SerializeField] private SO_FloatStartEndData fromToReelAnimation;
     private int offsetParameter = Shader.PropertyToID("_SlotOffset");
+    private int ReelSize => slots.Count;
+
+    private void Awake()
+    {
+        fromToReelAnimation.end = 0;
+        fromToReelAnimation.start = 0;
+    }
     public float Offset
     {
         get => material.GetVector(offsetParameter).y;
-        set => material.SetVector(offsetParameter, new Vector4(0, Mathf.Repeat(value,6), 0, 0));
+        set => material.SetVector(offsetParameter, new Vector4(0, Mathf.Repeat(value, ReelSize), 0, 0));
     }
     public override Dictionary<int, string> TweenableMembers { get; } = new Dictionary<int, string>
     {
@@ -32,19 +39,29 @@ public class ZZ_Grid_Reel : TweenableBase<float>
         }
         return 0;
     }
-    public void SetFromToAnimation(Vector2 fromTo)
-    {
-        fromToReelAnimation.start = fromTo.x;
-        fromToReelAnimation.end = fromTo.y;
-    }
+
     public void ResetFromToAnimation()
     {
         fromToReelAnimation.start = 0;
         fromToReelAnimation.end = 3;
     }
-    public void SetSymbol(SymbolData symbolData, int slotIndex)
+    public void SetSymbols(List<SymbolData> symbolsData)
     {
-        slots[slotIndex].SetSymbol(symbolData);
+        int slotsCount = symbolsData.Count;
+        int end = (int)fromToReelAnimation.end + slotsCount;
+
+        if (end > ReelSize)
+        {
+            end -= ReelSize;
+        }
+        fromToReelAnimation.end = end;
+        fromToReelAnimation.start = fromToReelAnimation.end - slotsCount;
+
+        for (int i = 0; i < slotsCount; i++)
+        {
+            slots[(int)Mathf.Repeat(fromToReelAnimation.end + i, ReelSize)].SetSymbol(symbolsData[i]);
+        }
+        
     }
 }
 

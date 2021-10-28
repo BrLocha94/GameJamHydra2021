@@ -44,7 +44,7 @@ public class BottomBar : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating(nameof(CheckAnimationTransitions), 0.5f, 0.5f);
+        //InvokeRepeating(nameof(CheckAnimationTransitions), 0.5f, 0.5f);
     }
 
     private void CheckAnimationTransitions()
